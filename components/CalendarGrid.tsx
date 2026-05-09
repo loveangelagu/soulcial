@@ -166,6 +166,23 @@ function EventCard({ event }: { event: RankedEvent }) {
 
   return (
     <article className="bg-paper rounded-2xl border border-lavender-pale shadow-[0_1px_0_0_#efe8ff] p-3 flex flex-col gap-1.5">
+      {event.poster_url ? (
+        <a
+          href={`https://nomeo.io/m/${event.uid}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block rounded-xl overflow-hidden border border-lavender-pale bg-lavender-light/20 mb-1"
+          aria-label={`Open ${event.name} on Nomeo`}
+        >
+          <img
+            src={event.poster_url}
+            alt={event.name}
+            className="w-full h-28 object-cover"
+            loading="lazy"
+            referrerPolicy="no-referrer"
+          />
+        </a>
+      ) : null}
       <a
         href={`https://nomeo.io/m/${event.uid}`}
         target="_blank"

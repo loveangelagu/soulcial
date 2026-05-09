@@ -307,6 +307,23 @@ function EventRow({
       ].join(' ')}
     >
       <div className="flex items-start gap-4">
+        {event.poster_url ? (
+          <a
+            href={`https://nomeo.io/m/${event.uid}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 block rounded-xl overflow-hidden border border-lavender-pale bg-lavender-light/20"
+            aria-label={`Open ${event.name} on Nomeo`}
+          >
+            <img
+              src={event.poster_url}
+              alt={event.name}
+              className="h-[76px] w-[76px] object-cover"
+              loading="lazy"
+              referrerPolicy="no-referrer"
+            />
+          </a>
+        ) : null}
         <div className="shrink-0 font-pixel text-pixel-base text-muted pt-1 min-w-[72px]">
           {formatBaliTime(startsAt)}
         </div>

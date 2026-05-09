@@ -1,40 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Soulcial
 
-## Getting Started
+**Stop scrolling event listings. Start living your best Bali week.**
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## The Problem
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You just landed in Bali. You open Instagram, Google, event apps — and get hit with hundreds of listings that all sound the same. "Ecstatic dance." "Beach club sunset." "Sound healing." But none of them tell you what the event *actually feels like*, who it's really for, or whether it fits the kind of week you want to have.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You end up at a "chill sunset session" that's actually a packed influencer party. Or you skip something amazing because the description made it sound boring. Event categories lie — and you waste your precious Bali time figuring that out the hard way.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## The Solution
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Soulcial reads between the lines. We analyze what events are *actually* like — not what their category says — and match them to your personality and energy, not just your interests.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Here's how it works:**
 
-## Learn More
+1. **Pick what you're into** — Select from interests that matter to you, from yoga to live music to entrepreneurship meetups.
 
-To learn more about Next.js, take a look at the following resources:
+2. **See your vibe profile** — We build a personality vector from your picks and show you who you are, mathematically. An interactive radar chart lets you fine-tune the traits that define your ideal week.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Tune your week** — Set your energy level, preferred times of day, group size, and which days you're free. Watch your plan update in real time as you adjust.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Get your personalized plan** — A full week of events ranked by how well they match *you*, not just what's popular. Pin your favorites, explore on a map, and export everything to Google Calendar or download as .ics.
 
-## Deploy on Vercel
+## Why It Works
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Most event platforms match you on **labels** — category tags like "wellness" or "nightlife" that flatten the nuance of what an experience actually is.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Soulcial matches you on **vibe** — a multidimensional personality vector that captures what an event *feels* like: its energy, intimacy, spontaneity, and who it actually attracts. The result is a week that feels like it was designed for you, because it was.
+
+## Built For
+
+- **Digital nomads** landing in Bali and wanting to make the most of their time
+- **Solo travelers** looking for events that match their energy, not just their schedule
+- **Groups and couples** who want a week that works for everyone
+- **Returning visitors** who've done the tourist hits and want to go deeper
+
+## Features
+
+- Personality-based event matching powered by vibe vectors
+- Interactive radar chart to visualize and adjust your profile
+- Smart weekly planner with drag-to-pin favorites
+- Real-time tuning — adjust energy, time, group size and watch your plan shift
+- Pixelated map view of your week across Bali
+- One-click Google Calendar sync and .ics export
+- Zero-result recovery — if your filters are too tight, relax them with one tap
+
+---
+
+*Soulcial — because your week should match your energy, not an algorithm's idea of what's popular.*

@@ -23,6 +23,7 @@ export type EventWithVector = {
   venue_name: string
   city: string
   google_maps_link: string
+  poster_url?: string | null
   starts_at: string
   ends_at: string
   vector: Record<string, number>
@@ -53,7 +54,7 @@ export async function loadEvents(): Promise<EventWithVector[]> {
   const { data, error } = await supabase
     .from('events')
     .select(`
-      uid, name, venue_name, city, google_maps_link, starts_at, ends_at,
+      uid, name, venue_name, city, google_maps_link, poster_url, starts_at, ends_at,
       event_vectors (
         vector, surface_label, actual_vibe, energy, social_intensity,
         format, interests_served, interests_adjacent, best_for, not_for
