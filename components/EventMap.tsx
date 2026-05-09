@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic'
 import type { RankedEvent } from '@/lib/ranking'
+import type { ArchetypeId } from '@/lib/avatars'
 
 const EventMapClient = dynamic(() => import('@/components/EventMapClient'), {
   ssr: false,
@@ -10,7 +11,15 @@ const EventMapClient = dynamic(() => import('@/components/EventMapClient'), {
   ),
 })
 
-export function EventMap({ events, pixelSize }: { events: RankedEvent[]; pixelSize?: number }) {
-  return <EventMapClient events={events} pixelSize={pixelSize} />
+export function EventMap({
+  events,
+  pixelSize,
+  userArchetype,
+}: {
+  events: RankedEvent[]
+  pixelSize?: number
+  userArchetype?: ArchetypeId | string
+}) {
+  return <EventMapClient events={events} pixelSize={pixelSize} userArchetype={userArchetype} />
 }
 

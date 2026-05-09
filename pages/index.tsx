@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { AvatarSprite } from '@/lib/avatars'
-import { userVectors } from '@/lib/personality/vector'
+import { userVectors, type PersonalityVec } from '@/lib/personality/vector'
 import { pickTagline } from '@/lib/tagline'
 import { loadEvents, type EventWithVector } from '@/lib/supabase'
 import { rankAndGroupByDay, type RankedEvent } from '@/lib/ranking'
@@ -18,6 +18,7 @@ import { usePinnedEvents } from '@/lib/myWeek'
 export default function Home() {
   const [interests, setInterests] = useState<string[]>([])
   const [sliders, setSliders] = useState<VibeSliders>(DEFAULT_SLIDERS)
+  const [personalityOverride, setPersonalityOverride] = useState<PersonalityVec | null>(null)
   const [events, setEvents] = useState<EventWithVector[]>([])
   const [loading, setLoading] = useState(true)
   const [gcalToken, setGcalToken] = useState<string | null>(null)
@@ -57,8 +58,14 @@ export default function Home() {
     }
   }, [interests, sliders])
 
-  const vec = useMemo(() => userVectors(interests).personality, [interests])
+  const baseVec = useMemo(() => userVectors(interests).personality, [interests])
+  const vec = personalityOverride ?? baseVec
   const tagline = useMemo(() => pickTagline(vec), [vec])
+
+  // If interests change, drop any manual edits (so the radar stays consistent).
+  useEffect(() => {
+    setPersonalityOverride(null)
+  }, [interests.join('|')])
 
   const days = useMemo(
     () => (interests.length === 0 ? [] : rankAndGroupByDay(events, vec, sliders)),
@@ -103,7 +110,7 @@ export default function Home() {
         <section className="px-4 mb-16">
           <SectionHeading n={2}>Who you are, mathematically</SectionHeading>
           <div className="max-w-3xl mx-auto bg-paper rounded-3xl border-[3px] border-lavender-pale shadow-card p-8 md:p-10 flex flex-col md:flex-row items-center gap-8">
-            <PersonalityRadar vector={vec} />
+            <PersonalityRadar vector={vec} onChange={setPersonalityOverride} />
             <div className="flex flex-col items-center gap-4">
               <AvatarSprite archetype={tagline.avatar} size={128} />
               <div className="font-pixel text-pixel-2xl md:text-pixel-3xl text-purple-dark text-center max-w-[280px]">
@@ -181,7 +188,7 @@ export default function Home() {
                   <div className="text-center text-xs text-muted font-pixel uppercase tracking-wide mb-2">
                     map view
                   </div>
-                  <EventMap events={days.flatMap((d) => d.events)} pixelSize={1} />
+                  <EventMap events={days.flatMap((d) => d.events)} pixelSize={1} userArchetype={tagline.avatar} />
                 </div>
               </>
             )}

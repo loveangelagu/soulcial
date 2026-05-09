@@ -32,12 +32,17 @@ body {
 
 /* Leaflet */
 .event-map {
-  height: 420px;
+  height: 780px;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 640px) {
   .event-map {
-    height: 320px;
+    height: 480px;
+    max-width: none;
   }
 }
 
@@ -63,4 +68,22 @@ body {
   font-size: 16px;
   line-height: 1.1;
   white-space: nowrap;
+}
+
+.event-map__user-marker {
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 3px solid #7c3aed;
+  box-shadow: 0 4px 0 0 #e9e0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-map__user-marker svg {
+  width: 34px;
+  height: 34px;
+  display: block;
 }
