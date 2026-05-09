@@ -11,6 +11,7 @@ import { VibeTuner } from '@/components/VibeTuner'
 import { WeeklyPlan } from '@/components/WeeklyPlan'
 import { downloadIcs } from '@/lib/ics'
 import { Hero } from '@/components/Hero'
+import { EventMap } from '@/components/EventMap'
 import { startPlanSession, trackExportClick, trackPin, trackReviewSheetOpen, trackSpotlightDayChange, trackZeroResultRecovery } from '@/lib/uxMetrics'
 import { usePinnedEvents } from '@/lib/myWeek'
 
@@ -176,6 +177,12 @@ export default function Home() {
                     downloadIcs('bali-week.ics', exportEvents)
                   }}
                 />
+                <div className="mt-8">
+                  <div className="text-center text-xs text-muted font-pixel uppercase tracking-wide mb-2">
+                    map view
+                  </div>
+                  <EventMap events={days.flatMap((d) => d.events)} pixelSize={1} />
+                </div>
               </>
             )}
           </div>
