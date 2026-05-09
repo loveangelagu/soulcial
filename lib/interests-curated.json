@@ -1,0 +1,37 @@
+[
+  { "id": "Yoga",                "label": "Yoga",            "emoji": "🧘" },
+  { "id": "Meditation",          "label": "Meditation",      "emoji": "🌙" },
+  { "id": "Breathwork",          "label": "Breathwork",      "emoji": "🌬" },
+  { "id": "Sound Healing",       "label": "Sound Healing",   "emoji": "🔔" },
+  { "id": "Cold Plunge",         "label": "Cold Plunge",     "emoji": "🧊" },
+  { "id": "Spirituality",        "label": "Spirituality",    "emoji": "✨" },
+  { "id": "Plant Medicine",      "label": "Plant Medicine",  "emoji": "🌿" },
+  { "id": "Women's Circles",     "label": "Women's Circles", "emoji": "⭕" },
+
+  { "id": "Surfing",             "label": "Surfing",         "emoji": "🏄" },
+  { "id": "Ecstatic Dance",      "label": "Ecstatic Dance",  "emoji": "💃" },
+  { "id": "Pilates",             "label": "Pilates",         "emoji": "🤸" },
+  { "id": "Hiking",              "label": "Hiking",          "emoji": "🥾" },
+  { "id": "Fitness",             "label": "Fitness",         "emoji": "💪" },
+
+  { "id": "AI / ML",             "label": "AI / ML",         "emoji": "🤖" },
+  { "id": "Vibe Coding",         "label": "Vibe Coding",     "emoji": "💻" },
+  { "id": "Startups",            "label": "Startups",        "emoji": "🚀" },
+  { "id": "SaaS",                "label": "SaaS",            "emoji": "☁️" },
+  { "id": "Crypto",              "label": "Crypto",          "emoji": "💰" },
+
+  { "id": "Art",                 "label": "Art",             "emoji": "🎨" },
+  { "id": "Music",               "label": "Music",           "emoji": "🎵" },
+  { "id": "Photography",         "label": "Photography",     "emoji": "📷" },
+  { "id": "Writing",             "label": "Writing",         "emoji": "✍️" },
+  { "id": "Design",              "label": "Design",          "emoji": "🖌" },
+
+  { "id": "Coffee",              "label": "Coffee",          "emoji": "☕" },
+  { "id": "Cocktails",           "label": "Cocktails",       "emoji": "🍸" },
+  { "id": "Live Music",          "label": "Live Music",      "emoji": "🎤" },
+  { "id": "Nightlife",           "label": "Nightlife",       "emoji": "🌃" },
+  { "id": "Cooking",             "label": "Cooking",         "emoji": "🍳" },
+  { "id": "Travel",              "label": "Travel",          "emoji": "✈️" },
+  { "id": "Networking",          "label": "Networking",      "emoji": "🤝" },
+  { "id": "Community",           "label": "Community",       "emoji": "🫂" }
+]

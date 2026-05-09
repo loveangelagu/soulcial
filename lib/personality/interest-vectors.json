@@ -1,0 +1,3786 @@
+{
+  "vectors": {
+    "Art": {
+      "personality": {
+        "openness": 0.92,
+        "embodiment": 0.45,
+        "edge_seeking": 0.55,
+        "stillness": 0.65,
+        "expression": 0.95,
+        "systems": 0.5,
+        "communion": 0.35,
+        "service": 0.3,
+        "agency": 0.6,
+        "mystic": 0.7,
+        "tempo": 0.4,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.95,
+        "executor_energy": 0.4,
+        "visionary_energy": 0.85,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.4
+      },
+      "rationale": "High openness creative practice, strong expression drive, mid embodiment (depends on medium), visionary energy for collab, long mastery curve."
+    },
+    "Content Creation": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.25,
+        "edge_seeking": 0.4,
+        "stillness": 0.2,
+        "expression": 0.9,
+        "systems": 0.45,
+        "communion": 0.6,
+        "service": 0.35,
+        "agency": 0.75,
+        "mystic": 0.15,
+        "tempo": 0.8,
+        "status_orientation": 0.75
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.8,
+        "executor_energy": 0.75,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.9,
+        "capital_risk_tolerance": 0.45
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.5,
+        "transmission_style": 0.95
+      },
+      "rationale": "Fast-tempo, distribution-heavy, external status seeking, high expression but lower depth than traditional arts, scalable transmission."
+    },
+    "DJing": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.6,
+        "edge_seeking": 0.5,
+        "stillness": 0.15,
+        "expression": 0.85,
+        "systems": 0.55,
+        "communion": 0.85,
+        "service": 0.4,
+        "agency": 0.7,
+        "mystic": 0.4,
+        "tempo": 0.85,
+        "status_orientation": 0.6
+      },
+      "collaboration": {
+        "technical_depth": 0.6,
+        "creative_output": 0.75,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.7,
+        "capital_risk_tolerance": 0.4
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.5,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.55
+      },
+      "rationale": "Communion-heavy performance role, technical craft with gear/software, fast tempo, moderate status seeking, embodied but through sound not body."
+    },
+    "Design": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.25,
+        "edge_seeking": 0.3,
+        "stillness": 0.45,
+        "expression": 0.75,
+        "systems": 0.7,
+        "communion": 0.35,
+        "service": 0.5,
+        "agency": 0.6,
+        "mystic": 0.25,
+        "tempo": 0.5,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.7,
+        "creative_output": 0.85,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.65,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.75,
+        "transmission_style": 0.7
+      },
+      "rationale": "Systems-creative hybrid, problem-solving aesthetic, mid-high technical depth, strong creative output, digitally transmissible."
+    },
+    "Fashion": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.55,
+        "edge_seeking": 0.45,
+        "stillness": 0.2,
+        "expression": 0.85,
+        "systems": 0.35,
+        "communion": 0.55,
+        "service": 0.25,
+        "agency": 0.6,
+        "mystic": 0.3,
+        "tempo": 0.7,
+        "status_orientation": 0.8
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.8,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.6,
+        "sales_distribution": 0.7,
+        "capital_risk_tolerance": 0.5
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.65,
+        "mastery_curve": 0.6,
+        "transmission_style": 0.6
+      },
+      "rationale": "Highly status-oriented creative field, embodied through wearing/presentation, strong expression, trend-driven tempo."
+    },
+    "Film": {
+      "personality": {
+        "openness": 0.85,
+        "embodiment": 0.35,
+        "edge_seeking": 0.5,
+        "stillness": 0.4,
+        "expression": 0.9,
+        "systems": 0.6,
+        "communion": 0.55,
+        "service": 0.35,
+        "agency": 0.65,
+        "mystic": 0.45,
+        "tempo": 0.55,
+        "status_orientation": 0.55
+      },
+      "collaboration": {
+        "technical_depth": 0.7,
+        "creative_output": 0.9,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.8,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.55
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.4,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.65
+      },
+      "rationale": "High openness storytelling medium, technical + visionary, collaborative by nature, long mastery curve, mid-high capital tolerance for production."
+    },
+    "Modeling": {
+      "personality": {
+        "openness": 0.5,
+        "embodiment": 0.8,
+        "edge_seeking": 0.45,
+        "stillness": 0.35,
+        "expression": 0.8,
+        "systems": 0.15,
+        "communion": 0.5,
+        "service": 0.2,
+        "agency": 0.45,
+        "mystic": 0.15,
+        "tempo": 0.65,
+        "status_orientation": 0.9
+      },
+      "collaboration": {
+        "technical_depth": 0.2,
+        "creative_output": 0.7,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.8,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.35,
+        "beginner_friendliness": 0.4,
+        "mastery_curve": 0.4,
+        "transmission_style": 0.5
+      },
+      "rationale": "Highly status-oriented, embodied expression, low systems/technical, strong distribution value, shorter mastery curve."
+    },
+    "Music": {
+      "personality": {
+        "openness": 0.85,
+        "embodiment": 0.65,
+        "edge_seeking": 0.45,
+        "stillness": 0.45,
+        "expression": 0.95,
+        "systems": 0.55,
+        "communion": 0.7,
+        "service": 0.35,
+        "agency": 0.55,
+        "mystic": 0.6,
+        "tempo": 0.6,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.75,
+        "creative_output": 0.95,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.7,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.9,
+        "beginner_friendliness": 0.6,
+        "mastery_curve": 0.9,
+        "transmission_style": 0.5
+      },
+      "rationale": "Deep lineage practice, high openness + expression, embodied through instrument/voice, communion in performance, very long mastery curve."
+    },
+    "Photography": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.4,
+        "edge_seeking": 0.35,
+        "stillness": 0.55,
+        "expression": 0.8,
+        "systems": 0.45,
+        "communion": 0.4,
+        "service": 0.35,
+        "agency": 0.55,
+        "mystic": 0.35,
+        "tempo": 0.45,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.6,
+        "creative_output": 0.85,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.65
+      },
+      "rationale": "Accessible creative entry, stillness in observation, technical craft with gear, bimodal professional/artistic population."
+    },
+    "Podcasting": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.15,
+        "edge_seeking": 0.35,
+        "stillness": 0.25,
+        "expression": 0.85,
+        "systems": 0.4,
+        "communion": 0.6,
+        "service": 0.45,
+        "agency": 0.7,
+        "mystic": 0.2,
+        "tempo": 0.6,
+        "status_orientation": 0.65
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.75,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.85,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.5,
+        "transmission_style": 0.95
+      },
+      "rationale": "Strong distribution/expression focus, low embodiment, communion through conversation, highly scalable transmission, accessible entry."
+    },
+    "Poetry": {
+      "personality": {
+        "openness": 0.95,
+        "embodiment": 0.3,
+        "edge_seeking": 0.4,
+        "stillness": 0.8,
+        "expression": 0.9,
+        "systems": 0.45,
+        "communion": 0.3,
+        "service": 0.25,
+        "agency": 0.4,
+        "mystic": 0.75,
+        "tempo": 0.25,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.85,
+        "executor_energy": 0.25,
+        "visionary_energy": 0.8,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.1
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.85
+      },
+      "rationale": "Highest openness, deep stillness practice, mystic/symbolic, low status orientation, internal mastery focus, scalable through text."
+    },
+    "Writing": {
+      "personality": {
+        "openness": 0.8,
+        "embodiment": 0.15,
+        "edge_seeking": 0.35,
+        "stillness": 0.7,
+        "expression": 0.9,
+        "systems": 0.55,
+        "communion": 0.25,
+        "service": 0.4,
+        "agency": 0.55,
+        "mystic": 0.45,
+        "tempo": 0.35,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.9,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.7,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.95
+      },
+      "rationale": "Solitary expression practice, high stillness, low embodiment, long mastery curve, fully scalable transmission."
+    },
+    "AI / ML": {
+      "personality": {
+        "openness": 0.85,
+        "embodiment": 0.08,
+        "edge_seeking": 0.55,
+        "stillness": 0.45,
+        "expression": 0.3,
+        "systems": 0.95,
+        "communion": 0.3,
+        "service": 0.4,
+        "agency": 0.7,
+        "mystic": 0.25,
+        "tempo": 0.55,
+        "status_orientation": 0.55
+      },
+      "collaboration": {
+        "technical_depth": 0.95,
+        "creative_output": 0.4,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.85,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.6
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.15,
+        "mastery_curve": 0.9,
+        "transmission_style": 0.85
+      },
+      "rationale": "Peak systems thinking, high technical depth, visionary frontier field, steep learning curve, low beginner friendliness."
+    },
+    "AR / VR": {
+      "personality": {
+        "openness": 0.8,
+        "embodiment": 0.35,
+        "edge_seeking": 0.6,
+        "stillness": 0.25,
+        "expression": 0.55,
+        "systems": 0.8,
+        "communion": 0.4,
+        "service": 0.35,
+        "agency": 0.65,
+        "mystic": 0.35,
+        "tempo": 0.6,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.85,
+        "creative_output": 0.6,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.8,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.55
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.25,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.7
+      },
+      "rationale": "Frontier tech, systems-heavy, visionary energy, some embodiment through spatial interaction, steep curve."
+    },
+    "App Development": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.08,
+        "edge_seeking": 0.4,
+        "stillness": 0.4,
+        "expression": 0.35,
+        "systems": 0.85,
+        "communion": 0.3,
+        "service": 0.45,
+        "agency": 0.8,
+        "mystic": 0.1,
+        "tempo": 0.6,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.9,
+        "creative_output": 0.45,
+        "executor_energy": 0.85,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.5
+      },
+      "curiosity": {
+        "teachable_depth": 0.8,
+        "beginner_friendliness": 0.25,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.9
+      },
+      "rationale": "Strong executor energy, high technical depth, systems-focused, low embodiment, builder mentality."
+    },
+    "Crypto": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.05,
+        "edge_seeking": 0.85,
+        "stillness": 0.2,
+        "expression": 0.35,
+        "systems": 0.8,
+        "communion": 0.45,
+        "service": 0.15,
+        "agency": 0.75,
+        "mystic": 0.2,
+        "tempo": 0.85,
+        "status_orientation": 0.85
+      },
+      "collaboration": {
+        "technical_depth": 0.65,
+        "creative_output": 0.2,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.65,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.95
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.2,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.85
+      },
+      "rationale": "High edge-seeking and status, peak capital risk tolerance, fast tempo, systems thinking, tribal community aspect."
+    },
+    "Cybersecurity": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.05,
+        "edge_seeking": 0.5,
+        "stillness": 0.5,
+        "expression": 0.15,
+        "systems": 0.95,
+        "communion": 0.2,
+        "service": 0.55,
+        "agency": 0.6,
+        "mystic": 0.08,
+        "tempo": 0.55,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.95,
+        "creative_output": 0.15,
+        "executor_energy": 0.7,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.15,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.8
+      },
+      "rationale": "Peak systems/technical, protective service orientation, low expression, deep mastery curve, steep entry barrier."
+    },
+    "Data Science": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.05,
+        "edge_seeking": 0.35,
+        "stillness": 0.55,
+        "expression": 0.25,
+        "systems": 0.92,
+        "communion": 0.25,
+        "service": 0.45,
+        "agency": 0.55,
+        "mystic": 0.1,
+        "tempo": 0.45,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.92,
+        "creative_output": 0.3,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.4
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.2,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.85
+      },
+      "rationale": "Systems-heavy analytical work, low embodiment, methodical tempo, high technical depth, scalable knowledge."
+    },
+    "Game Dev": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.15,
+        "edge_seeking": 0.4,
+        "stillness": 0.35,
+        "expression": 0.65,
+        "systems": 0.8,
+        "communion": 0.4,
+        "service": 0.4,
+        "agency": 0.65,
+        "mystic": 0.25,
+        "tempo": 0.5,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.85,
+        "creative_output": 0.75,
+        "executor_energy": 0.7,
+        "visionary_energy": 0.7,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.45
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.3,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.8
+      },
+      "rationale": "Creative-technical hybrid, systems + expression, visionary worldbuilding, executor energy to ship games."
+    },
+    "Hardware": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.35,
+        "edge_seeking": 0.45,
+        "stillness": 0.45,
+        "expression": 0.25,
+        "systems": 0.88,
+        "communion": 0.25,
+        "service": 0.4,
+        "agency": 0.7,
+        "mystic": 0.1,
+        "tempo": 0.45,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.92,
+        "creative_output": 0.35,
+        "executor_energy": 0.75,
+        "visionary_energy": 0.6,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.55
+      },
+      "curiosity": {
+        "teachable_depth": 0.8,
+        "beginner_friendliness": 0.2,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.55
+      },
+      "rationale": "Physical systems building, high technical depth, some embodiment through hands-on work, capital intensive."
+    },
+    "Vibe Coding": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.1,
+        "edge_seeking": 0.45,
+        "stillness": 0.35,
+        "expression": 0.5,
+        "systems": 0.8,
+        "communion": 0.35,
+        "service": 0.4,
+        "agency": 0.75,
+        "mystic": 0.2,
+        "tempo": 0.65,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.75,
+        "creative_output": 0.55,
+        "executor_energy": 0.8,
+        "visionary_energy": 0.6,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.4
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.6,
+        "transmission_style": 0.9
+      },
+      "rationale": "AI-assisted development, more accessible than traditional coding, executor-focused, creative-technical blend."
+    },
+    "Web3": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.05,
+        "edge_seeking": 0.75,
+        "stillness": 0.2,
+        "expression": 0.35,
+        "systems": 0.82,
+        "communion": 0.5,
+        "service": 0.25,
+        "agency": 0.75,
+        "mystic": 0.2,
+        "tempo": 0.75,
+        "status_orientation": 0.75
+      },
+      "collaboration": {
+        "technical_depth": 0.8,
+        "creative_output": 0.25,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.7,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.85
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.2,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.8
+      },
+      "rationale": "Frontier tech with ideological community, high edge/status seeking, visionary energy, steep learning curve."
+    },
+    "Blockchain": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.05,
+        "edge_seeking": 0.65,
+        "stillness": 0.35,
+        "expression": 0.2,
+        "systems": 0.9,
+        "communion": 0.35,
+        "service": 0.3,
+        "agency": 0.65,
+        "mystic": 0.15,
+        "tempo": 0.6,
+        "status_orientation": 0.6
+      },
+      "collaboration": {
+        "technical_depth": 0.88,
+        "creative_output": 0.2,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.65,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.8
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.15,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.85
+      },
+      "rationale": "Core infrastructure layer, deep systems, less hype than crypto/web3 labels, technical-first population."
+    },
+    "Agency": {
+      "personality": {
+        "openness": 0.45,
+        "embodiment": 0.15,
+        "edge_seeking": 0.5,
+        "stillness": 0.2,
+        "expression": 0.45,
+        "systems": 0.55,
+        "communion": 0.55,
+        "service": 0.55,
+        "agency": 0.85,
+        "mystic": 0.1,
+        "tempo": 0.75,
+        "status_orientation": 0.65
+      },
+      "collaboration": {
+        "technical_depth": 0.4,
+        "creative_output": 0.5,
+        "executor_energy": 0.9,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.8,
+        "capital_risk_tolerance": 0.55
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.45,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.7
+      },
+      "rationale": "Peak executor energy, sales/distribution focused, service-oriented business model, fast tempo operations."
+    },
+    "Brand Building": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.2,
+        "edge_seeking": 0.5,
+        "stillness": 0.25,
+        "expression": 0.75,
+        "systems": 0.55,
+        "communion": 0.55,
+        "service": 0.4,
+        "agency": 0.8,
+        "mystic": 0.2,
+        "tempo": 0.65,
+        "status_orientation": 0.75
+      },
+      "collaboration": {
+        "technical_depth": 0.4,
+        "creative_output": 0.7,
+        "executor_energy": 0.75,
+        "visionary_energy": 0.65,
+        "sales_distribution": 0.85,
+        "capital_risk_tolerance": 0.5
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.5,
+        "mastery_curve": 0.6,
+        "transmission_style": 0.75
+      },
+      "rationale": "Expression meets distribution, status-oriented, agency-driven, creative-strategic hybrid."
+    },
+    "Consulting": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.15,
+        "edge_seeking": 0.35,
+        "stillness": 0.4,
+        "expression": 0.5,
+        "systems": 0.7,
+        "communion": 0.5,
+        "service": 0.65,
+        "agency": 0.7,
+        "mystic": 0.1,
+        "tempo": 0.55,
+        "status_orientation": 0.6
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.35,
+        "executor_energy": 0.7,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.65,
+        "capital_risk_tolerance": 0.45
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.4,
+        "mastery_curve": 0.65,
+        "transmission_style": 0.65
+      },
+      "rationale": "Service-oriented expertise delivery, systems thinking, moderate across most dimensions, mid-high agency."
+    },
+    "Creator Economy": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.25,
+        "edge_seeking": 0.5,
+        "stillness": 0.15,
+        "expression": 0.85,
+        "systems": 0.45,
+        "communion": 0.6,
+        "service": 0.35,
+        "agency": 0.8,
+        "mystic": 0.15,
+        "tempo": 0.8,
+        "status_orientation": 0.8
+      },
+      "collaboration": {
+        "technical_depth": 0.3,
+        "creative_output": 0.75,
+        "executor_energy": 0.75,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.92,
+        "capital_risk_tolerance": 0.45
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.5,
+        "transmission_style": 0.95
+      },
+      "rationale": "Peak distribution focus, fast tempo, status-driven, expression through platform, highly scalable."
+    },
+    "E-Commerce": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.1,
+        "edge_seeking": 0.45,
+        "stillness": 0.25,
+        "expression": 0.3,
+        "systems": 0.65,
+        "communion": 0.35,
+        "service": 0.45,
+        "agency": 0.85,
+        "mystic": 0.08,
+        "tempo": 0.75,
+        "status_orientation": 0.65
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.35,
+        "executor_energy": 0.9,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.85,
+        "capital_risk_tolerance": 0.6
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.85
+      },
+      "rationale": "Executor-heavy, distribution-focused, operational systems, capital risk for inventory/ads."
+    },
+    "Finance": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.08,
+        "edge_seeking": 0.55,
+        "stillness": 0.4,
+        "expression": 0.2,
+        "systems": 0.8,
+        "communion": 0.35,
+        "service": 0.4,
+        "agency": 0.7,
+        "mystic": 0.05,
+        "tempo": 0.6,
+        "status_orientation": 0.85
+      },
+      "collaboration": {
+        "technical_depth": 0.7,
+        "creative_output": 0.15,
+        "executor_energy": 0.7,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.85
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.25,
+        "mastery_curve": 0.75,
+        "transmission_style": 0.8
+      },
+      "rationale": "High status orientation, systems-heavy, capital-focused, low mystic/expression, analytical depth."
+    },
+    "Hospitality": {
+      "personality": {
+        "openness": 0.5,
+        "embodiment": 0.45,
+        "edge_seeking": 0.3,
+        "stillness": 0.3,
+        "expression": 0.55,
+        "systems": 0.45,
+        "communion": 0.8,
+        "service": 0.85,
+        "agency": 0.6,
+        "mystic": 0.15,
+        "tempo": 0.65,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.45,
+        "executor_energy": 0.75,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.7,
+        "capital_risk_tolerance": 0.55
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.4
+      },
+      "rationale": "High service/communion orientation, embodied through presence, operational focus, in-person transmission."
+    },
+    "Investing": {
+      "personality": {
+        "openness": 0.5,
+        "embodiment": 0.05,
+        "edge_seeking": 0.6,
+        "stillness": 0.5,
+        "expression": 0.15,
+        "systems": 0.85,
+        "communion": 0.35,
+        "service": 0.2,
+        "agency": 0.75,
+        "mystic": 0.08,
+        "tempo": 0.45,
+        "status_orientation": 0.85
+      },
+      "collaboration": {
+        "technical_depth": 0.6,
+        "creative_output": 0.1,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.6,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.95
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.35,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.8
+      },
+      "rationale": "Peak capital risk tolerance, systems-heavy analysis, high status orientation, patient tempo, low expression."
+    },
+    "Legal / Tax": {
+      "personality": {
+        "openness": 0.35,
+        "embodiment": 0.05,
+        "edge_seeking": 0.25,
+        "stillness": 0.55,
+        "expression": 0.2,
+        "systems": 0.85,
+        "communion": 0.3,
+        "service": 0.7,
+        "agency": 0.55,
+        "mystic": 0.05,
+        "tempo": 0.4,
+        "status_orientation": 0.6
+      },
+      "collaboration": {
+        "technical_depth": 0.8,
+        "creative_output": 0.1,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.4
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.15,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.75
+      },
+      "rationale": "Deep systems/rules expertise, service-oriented, low edge-seeking, high barrier to entry, slow tempo."
+    },
+    "Marketing": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.15,
+        "edge_seeking": 0.45,
+        "stillness": 0.2,
+        "expression": 0.7,
+        "systems": 0.55,
+        "communion": 0.55,
+        "service": 0.45,
+        "agency": 0.75,
+        "mystic": 0.15,
+        "tempo": 0.75,
+        "status_orientation": 0.65
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.65,
+        "executor_energy": 0.75,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.9,
+        "capital_risk_tolerance": 0.5
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.6,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.8
+      },
+      "rationale": "Distribution-heavy, creative-strategic, fast tempo, executor energy, mid-high status orientation."
+    },
+    "Productivity": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.15,
+        "edge_seeking": 0.25,
+        "stillness": 0.45,
+        "expression": 0.35,
+        "systems": 0.75,
+        "communion": 0.25,
+        "service": 0.45,
+        "agency": 0.8,
+        "mystic": 0.08,
+        "tempo": 0.6,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.4,
+        "creative_output": 0.3,
+        "executor_energy": 0.9,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.45,
+        "transmission_style": 0.85
+      },
+      "rationale": "Peak executor energy, systems for optimization, low edge-seeking, highly teachable and scalable."
+    },
+    "Real Estate": {
+      "personality": {
+        "openness": 0.35,
+        "embodiment": 0.2,
+        "edge_seeking": 0.55,
+        "stillness": 0.35,
+        "expression": 0.25,
+        "systems": 0.6,
+        "communion": 0.45,
+        "service": 0.4,
+        "agency": 0.85,
+        "mystic": 0.05,
+        "tempo": 0.55,
+        "status_orientation": 0.85
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.2,
+        "executor_energy": 0.85,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.7,
+        "capital_risk_tolerance": 0.9
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.35,
+        "mastery_curve": 0.65,
+        "transmission_style": 0.7
+      },
+      "rationale": "High capital risk/status orientation, executor-heavy deal-making, networking-dependent, low mystic/expression."
+    },
+    "Retreats": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.55,
+        "edge_seeking": 0.45,
+        "stillness": 0.55,
+        "expression": 0.45,
+        "systems": 0.45,
+        "communion": 0.75,
+        "service": 0.8,
+        "agency": 0.7,
+        "mystic": 0.6,
+        "tempo": 0.4,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.45,
+        "executor_energy": 0.7,
+        "visionary_energy": 0.6,
+        "sales_distribution": 0.65,
+        "capital_risk_tolerance": 0.55
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.65,
+        "mastery_curve": 0.5,
+        "transmission_style": 0.35
+      },
+      "rationale": "Service + communion focused, mystic-leaning, container-holding, operational execution required, in-person transmission."
+    },
+    "SaaS": {
+      "personality": {
+        "openness": 0.45,
+        "embodiment": 0.05,
+        "edge_seeking": 0.55,
+        "stillness": 0.35,
+        "expression": 0.25,
+        "systems": 0.8,
+        "communion": 0.35,
+        "service": 0.5,
+        "agency": 0.88,
+        "mystic": 0.05,
+        "tempo": 0.7,
+        "status_orientation": 0.65
+      },
+      "collaboration": {
+        "technical_depth": 0.75,
+        "creative_output": 0.3,
+        "executor_energy": 0.9,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.7,
+        "capital_risk_tolerance": 0.65
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.3,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.9
+      },
+      "rationale": "Peak executor energy, systems-technical, recurring revenue model, scalable by design."
+    },
+    "Sales": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.3,
+        "edge_seeking": 0.55,
+        "stillness": 0.15,
+        "expression": 0.65,
+        "systems": 0.4,
+        "communion": 0.7,
+        "service": 0.5,
+        "agency": 0.85,
+        "mystic": 0.08,
+        "tempo": 0.85,
+        "status_orientation": 0.8
+      },
+      "collaboration": {
+        "technical_depth": 0.25,
+        "creative_output": 0.3,
+        "executor_energy": 0.85,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.95,
+        "capital_risk_tolerance": 0.55
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.6,
+        "mastery_curve": 0.6,
+        "transmission_style": 0.6
+      },
+      "rationale": "Peak distribution, fast tempo, communion through persuasion, high status orientation, executor-focused."
+    },
+    "Startups": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.15,
+        "edge_seeking": 0.85,
+        "stillness": 0.15,
+        "expression": 0.5,
+        "systems": 0.7,
+        "communion": 0.55,
+        "service": 0.4,
+        "agency": 0.95,
+        "mystic": 0.15,
+        "tempo": 0.85,
+        "status_orientation": 0.7
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.45,
+        "executor_energy": 0.92,
+        "visionary_energy": 0.85,
+        "sales_distribution": 0.65,
+        "capital_risk_tolerance": 0.85
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.35,
+        "mastery_curve": 0.65,
+        "transmission_style": 0.7
+      },
+      "rationale": "Peak agency + edge-seeking, visionary + executor hybrid, high risk tolerance, fast tempo, building under uncertainty."
+    },
+    "BJJ": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.95,
+        "edge_seeking": 0.7,
+        "stillness": 0.35,
+        "expression": 0.25,
+        "systems": 0.7,
+        "communion": 0.65,
+        "service": 0.35,
+        "agency": 0.55,
+        "mystic": 0.2,
+        "tempo": 0.6,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.85,
+        "creative_output": 0.15,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.95,
+        "beginner_friendliness": 0.35,
+        "mastery_curve": 0.95,
+        "transmission_style": 0.1
+      },
+      "rationale": "Peak embodiment + mastery curve, deep lineage system, communion through training partners, embodied transmission only."
+    },
+    "Basketball": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.85,
+        "edge_seeking": 0.5,
+        "stillness": 0.15,
+        "expression": 0.45,
+        "systems": 0.45,
+        "communion": 0.8,
+        "service": 0.3,
+        "agency": 0.55,
+        "mystic": 0.1,
+        "tempo": 0.8,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.2,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.6,
+        "mastery_curve": 0.75,
+        "transmission_style": 0.2
+      },
+      "rationale": "Team communion sport, fast tempo, high embodiment, competitive edge, moderate entry barrier."
+    },
+    "Boxing": {
+      "personality": {
+        "openness": 0.45,
+        "embodiment": 0.95,
+        "edge_seeking": 0.85,
+        "stillness": 0.25,
+        "expression": 0.35,
+        "systems": 0.55,
+        "communion": 0.45,
+        "service": 0.25,
+        "agency": 0.7,
+        "mystic": 0.15,
+        "tempo": 0.85,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.75,
+        "creative_output": 0.15,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.45,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.1
+      },
+      "rationale": "Peak embodiment + edge-seeking, fast tempo combat, deep technical lineage, embodied transmission."
+    },
+    "Calisthenics": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.9,
+        "edge_seeking": 0.45,
+        "stillness": 0.35,
+        "expression": 0.4,
+        "systems": 0.5,
+        "communion": 0.4,
+        "service": 0.25,
+        "agency": 0.65,
+        "mystic": 0.1,
+        "tempo": 0.55,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.25,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.5
+      },
+      "rationale": "High embodiment, self-mastery focus, progressive skill system, moderate community aspect."
+    },
+    "Capoeira": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.95,
+        "edge_seeking": 0.55,
+        "stillness": 0.25,
+        "expression": 0.8,
+        "systems": 0.45,
+        "communion": 0.85,
+        "service": 0.35,
+        "agency": 0.5,
+        "mystic": 0.55,
+        "tempo": 0.7,
+        "status_orientation": 0.25
+      },
+      "collaboration": {
+        "technical_depth": 0.8,
+        "creative_output": 0.55,
+        "executor_energy": 0.4,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.9,
+        "beginner_friendliness": 0.45,
+        "mastery_curve": 0.9,
+        "transmission_style": 0.08
+      },
+      "rationale": "Cultural lineage practice, high expression through movement, communion in roda, mystic/ritual elements."
+    },
+    "CrossFit": {
+      "personality": {
+        "openness": 0.3,
+        "embodiment": 0.9,
+        "edge_seeking": 0.6,
+        "stillness": 0.1,
+        "expression": 0.35,
+        "systems": 0.45,
+        "communion": 0.75,
+        "service": 0.3,
+        "agency": 0.65,
+        "mystic": 0.05,
+        "tempo": 0.85,
+        "status_orientation": 0.55
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.15,
+        "executor_energy": 0.75,
+        "visionary_energy": 0.15,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.5,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.35
+      },
+      "rationale": "Community-driven intensity, competitive edge, fast tempo, low openness/stillness, tribal belonging."
+    },
+    "Cycling": {
+      "personality": {
+        "openness": 0.45,
+        "embodiment": 0.85,
+        "edge_seeking": 0.45,
+        "stillness": 0.4,
+        "expression": 0.2,
+        "systems": 0.4,
+        "communion": 0.45,
+        "service": 0.2,
+        "agency": 0.55,
+        "mystic": 0.15,
+        "tempo": 0.55,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.4,
+        "creative_output": 0.15,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.15,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.45,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.45
+      },
+      "rationale": "Embodied endurance practice, meditative quality, moderate community, accessible entry."
+    },
+    "Diving / Freediving": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.9,
+        "edge_seeking": 0.75,
+        "stillness": 0.7,
+        "expression": 0.2,
+        "systems": 0.45,
+        "communion": 0.35,
+        "service": 0.25,
+        "agency": 0.5,
+        "mystic": 0.55,
+        "tempo": 0.25,
+        "status_orientation": 0.3
+      },
+      "collaboration": {
+        "technical_depth": 0.65,
+        "creative_output": 0.25,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.35,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.2
+      },
+      "rationale": "Stillness + edge-seeking paradox, breath mastery, mystic depth experience, technical certification path."
+    },
+    "Ecstatic Dance": {
+      "personality": {
+        "openness": 0.85,
+        "embodiment": 0.95,
+        "edge_seeking": 0.5,
+        "stillness": 0.25,
+        "expression": 0.85,
+        "systems": 0.2,
+        "communion": 0.9,
+        "service": 0.35,
+        "agency": 0.4,
+        "mystic": 0.75,
+        "tempo": 0.7,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.2,
+        "creative_output": 0.45,
+        "executor_energy": 0.3,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.35,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.35,
+        "transmission_style": 0.1
+      },
+      "rationale": "Peak communion + embodiment, mystic/ritual space, high expression, low systems, accessible entry."
+    },
+    "Fitness": {
+      "personality": {
+        "openness": 0.35,
+        "embodiment": 0.85,
+        "edge_seeking": 0.4,
+        "stillness": 0.2,
+        "expression": 0.3,
+        "systems": 0.4,
+        "communion": 0.45,
+        "service": 0.3,
+        "agency": 0.6,
+        "mystic": 0.08,
+        "tempo": 0.65,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.4,
+        "creative_output": 0.2,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.45,
+        "transmission_style": 0.55
+      },
+      "rationale": "Generic embodiment category, accessible, moderate agency/status, gym culture community."
+    },
+    "Hiking": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.75,
+        "edge_seeking": 0.35,
+        "stillness": 0.65,
+        "expression": 0.15,
+        "systems": 0.2,
+        "communion": 0.35,
+        "service": 0.2,
+        "agency": 0.45,
+        "mystic": 0.4,
+        "tempo": 0.3,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.2,
+        "creative_output": 0.15,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.3,
+        "sales_distribution": 0.1,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.25,
+        "beginner_friendliness": 0.9,
+        "mastery_curve": 0.25,
+        "transmission_style": 0.35
+      },
+      "rationale": "Accessible embodied stillness, nature connection, internal orientation, minimal skill barrier."
+    },
+    "Kitesurfing": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.92,
+        "edge_seeking": 0.85,
+        "stillness": 0.2,
+        "expression": 0.45,
+        "systems": 0.45,
+        "communion": 0.5,
+        "service": 0.15,
+        "agency": 0.65,
+        "mystic": 0.35,
+        "tempo": 0.8,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.6,
+        "creative_output": 0.3,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.45
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.2,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.2
+      },
+      "rationale": "High edge-seeking + embodiment, technical wind/water mastery, steep learning curve, flow state sport."
+    },
+    "Muay Thai": {
+      "personality": {
+        "openness": 0.45,
+        "embodiment": 0.95,
+        "edge_seeking": 0.85,
+        "stillness": 0.2,
+        "expression": 0.35,
+        "systems": 0.55,
+        "communion": 0.5,
+        "service": 0.25,
+        "agency": 0.7,
+        "mystic": 0.25,
+        "tempo": 0.85,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.8,
+        "creative_output": 0.15,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.4,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.1
+      },
+      "rationale": "Combat edge-seeking, cultural lineage, peak embodiment, fast tempo, gym community."
+    },
+    "Padel": {
+      "personality": {
+        "openness": 0.35,
+        "embodiment": 0.75,
+        "edge_seeking": 0.35,
+        "stillness": 0.15,
+        "expression": 0.25,
+        "systems": 0.35,
+        "communion": 0.7,
+        "service": 0.2,
+        "agency": 0.45,
+        "mystic": 0.05,
+        "tempo": 0.7,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.4,
+        "creative_output": 0.1,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.1,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.3
+      },
+      "rationale": "Social sport, accessible entry, communion-focused, networking overlay in Bali scene, low depth."
+    },
+    "Pilates": {
+      "personality": {
+        "openness": 0.45,
+        "embodiment": 0.85,
+        "edge_seeking": 0.2,
+        "stillness": 0.55,
+        "expression": 0.25,
+        "systems": 0.5,
+        "communion": 0.4,
+        "service": 0.35,
+        "agency": 0.45,
+        "mystic": 0.2,
+        "tempo": 0.35,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.15,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.6,
+        "transmission_style": 0.4
+      },
+      "rationale": "Controlled embodiment, systems-based movement, slower tempo, accessible, certification path for teaching."
+    },
+    "Pole / Aerial": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.95,
+        "edge_seeking": 0.6,
+        "stillness": 0.2,
+        "expression": 0.85,
+        "systems": 0.4,
+        "communion": 0.55,
+        "service": 0.25,
+        "agency": 0.55,
+        "mystic": 0.3,
+        "tempo": 0.6,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.65,
+        "creative_output": 0.6,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.4,
+        "mastery_curve": 0.75,
+        "transmission_style": 0.15
+      },
+      "rationale": "Performance + embodiment fusion, expression-heavy, edge through physicality, studio community."
+    },
+    "Rock Climbing": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.9,
+        "edge_seeking": 0.75,
+        "stillness": 0.45,
+        "expression": 0.2,
+        "systems": 0.5,
+        "communion": 0.5,
+        "service": 0.2,
+        "agency": 0.6,
+        "mystic": 0.35,
+        "tempo": 0.45,
+        "status_orientation": 0.3
+      },
+      "collaboration": {
+        "technical_depth": 0.6,
+        "creative_output": 0.15,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.3,
+        "sales_distribution": 0.15,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.5,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.2
+      },
+      "rationale": "Problem-solving embodiment, edge-seeking with safety systems, partner trust, flow state practice."
+    },
+    "Running": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.85,
+        "edge_seeking": 0.4,
+        "stillness": 0.5,
+        "expression": 0.15,
+        "systems": 0.35,
+        "communion": 0.3,
+        "service": 0.2,
+        "agency": 0.55,
+        "mystic": 0.2,
+        "tempo": 0.55,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.3,
+        "creative_output": 0.1,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.15,
+        "sales_distribution": 0.15,
+        "capital_risk_tolerance": 0.1
+      },
+      "curiosity": {
+        "teachable_depth": 0.4,
+        "beginner_friendliness": 0.85,
+        "mastery_curve": 0.45,
+        "transmission_style": 0.55
+      },
+      "rationale": "Solo embodied practice, meditative quality, accessible, endurance focus, minimal technical depth."
+    },
+    "Skating": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.88,
+        "edge_seeking": 0.65,
+        "stillness": 0.15,
+        "expression": 0.65,
+        "systems": 0.35,
+        "communion": 0.55,
+        "service": 0.15,
+        "agency": 0.55,
+        "mystic": 0.2,
+        "tempo": 0.7,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.5,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.45,
+        "mastery_curve": 0.75,
+        "transmission_style": 0.35
+      },
+      "rationale": "Street culture expression, embodied creativity, edge through risk, scene community."
+    },
+    "Soccer": {
+      "personality": {
+        "openness": 0.35,
+        "embodiment": 0.85,
+        "edge_seeking": 0.45,
+        "stillness": 0.1,
+        "expression": 0.35,
+        "systems": 0.45,
+        "communion": 0.85,
+        "service": 0.3,
+        "agency": 0.5,
+        "mystic": 0.05,
+        "tempo": 0.8,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.2,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.75,
+        "transmission_style": 0.25
+      },
+      "rationale": "Team communion sport, fast tempo, accessible globally, moderate technical depth."
+    },
+    "Stand-Up Paddleboard": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.8,
+        "edge_seeking": 0.35,
+        "stillness": 0.55,
+        "expression": 0.2,
+        "systems": 0.25,
+        "communion": 0.4,
+        "service": 0.2,
+        "agency": 0.45,
+        "mystic": 0.4,
+        "tempo": 0.35,
+        "status_orientation": 0.3
+      },
+      "collaboration": {
+        "technical_depth": 0.3,
+        "creative_output": 0.15,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.4,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.4,
+        "transmission_style": 0.35
+      },
+      "rationale": "Accessible water embodiment, meditative stillness, low edge, nature connection."
+    },
+    "Surf Coaching": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.9,
+        "edge_seeking": 0.6,
+        "stillness": 0.35,
+        "expression": 0.45,
+        "systems": 0.55,
+        "communion": 0.65,
+        "service": 0.8,
+        "agency": 0.7,
+        "mystic": 0.45,
+        "tempo": 0.5,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.7,
+        "creative_output": 0.3,
+        "executor_energy": 0.65,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.15
+      },
+      "rationale": "Service + teaching orientation, embodied expertise transmission, Bali-specific profession, community builder."
+    },
+    "Surfing": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.95,
+        "edge_seeking": 0.7,
+        "stillness": 0.4,
+        "expression": 0.35,
+        "systems": 0.3,
+        "communion": 0.5,
+        "service": 0.2,
+        "agency": 0.5,
+        "mystic": 0.5,
+        "tempo": 0.55,
+        "status_orientation": 0.25
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.25,
+        "executor_energy": 0.4,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.3,
+        "mastery_curve": 0.9,
+        "transmission_style": 0.15
+      },
+      "rationale": "Bali archetype: embodied flow, mid openness, present-moment absorption, internal status, long mastery curve."
+    },
+    "Tennis": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.8,
+        "edge_seeking": 0.45,
+        "stillness": 0.2,
+        "expression": 0.3,
+        "systems": 0.5,
+        "communion": 0.5,
+        "service": 0.2,
+        "agency": 0.55,
+        "mystic": 0.08,
+        "tempo": 0.7,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.6,
+        "creative_output": 0.15,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.15,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.75,
+        "transmission_style": 0.35
+      },
+      "rationale": "Technical racket sport, competitive edge, social networking overlay, moderate mastery curve."
+    },
+    "Volleyball": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.85,
+        "edge_seeking": 0.4,
+        "stillness": 0.1,
+        "expression": 0.4,
+        "systems": 0.35,
+        "communion": 0.85,
+        "service": 0.25,
+        "agency": 0.45,
+        "mystic": 0.08,
+        "tempo": 0.75,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.15,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.15,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.1
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.25
+      },
+      "rationale": "Peak team communion, accessible beach culture, fast tempo, social connector in Bali."
+    },
+    "Yoga": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.9,
+        "edge_seeking": 0.3,
+        "stillness": 0.8,
+        "expression": 0.35,
+        "systems": 0.55,
+        "communion": 0.55,
+        "service": 0.5,
+        "agency": 0.45,
+        "mystic": 0.7,
+        "tempo": 0.3,
+        "status_orientation": 0.2
+      },
+      "collaboration": {
+        "technical_depth": 0.7,
+        "creative_output": 0.3,
+        "executor_energy": 0.4,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.9,
+        "beginner_friendliness": 0.85,
+        "mastery_curve": 0.9,
+        "transmission_style": 0.25
+      },
+      "rationale": "Bali cornerstone: embodied stillness, mystic depth, lineage practice, accessible entry but deep mastery."
+    },
+    "Acupuncture": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.7,
+        "edge_seeking": 0.3,
+        "stillness": 0.65,
+        "expression": 0.2,
+        "systems": 0.75,
+        "communion": 0.35,
+        "service": 0.85,
+        "agency": 0.55,
+        "mystic": 0.7,
+        "tempo": 0.3,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.8,
+        "creative_output": 0.15,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.1,
+        "mastery_curve": 0.9,
+        "transmission_style": 0.25
+      },
+      "rationale": "TCM lineage healing, high service, systems-based diagnosis, steep professional barrier, embodied practice."
+    },
+    "Astrology": {
+      "personality": {
+        "openness": 0.8,
+        "embodiment": 0.15,
+        "edge_seeking": 0.35,
+        "stillness": 0.55,
+        "expression": 0.5,
+        "systems": 0.8,
+        "communion": 0.5,
+        "service": 0.6,
+        "agency": 0.5,
+        "mystic": 0.95,
+        "tempo": 0.4,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.65,
+        "creative_output": 0.4,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.65,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.8,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.65
+      },
+      "rationale": "Peak mystic, symbolic systems thinking, service through readings, lineage depth, scalable through content."
+    },
+    "Beauty": {
+      "personality": {
+        "openness": 0.45,
+        "embodiment": 0.6,
+        "edge_seeking": 0.25,
+        "stillness": 0.3,
+        "expression": 0.6,
+        "systems": 0.3,
+        "communion": 0.5,
+        "service": 0.55,
+        "agency": 0.5,
+        "mystic": 0.15,
+        "tempo": 0.55,
+        "status_orientation": 0.7
+      },
+      "collaboration": {
+        "technical_depth": 0.4,
+        "creative_output": 0.55,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.3,
+        "sales_distribution": 0.6,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.5,
+        "transmission_style": 0.6
+      },
+      "rationale": "Service + expression through aesthetics, status-oriented, moderate embodiment, accessible entry."
+    },
+    "Breathwork": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.85,
+        "edge_seeking": 0.55,
+        "stillness": 0.65,
+        "expression": 0.25,
+        "systems": 0.45,
+        "communion": 0.55,
+        "service": 0.6,
+        "agency": 0.45,
+        "mystic": 0.75,
+        "tempo": 0.4,
+        "status_orientation": 0.2
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.2,
+        "executor_energy": 0.4,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.65,
+        "transmission_style": 0.3
+      },
+      "rationale": "Embodied edge-seeking through altered states, mystic opening, service facilitation, accessible but deep."
+    },
+    "Coaching": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.3,
+        "edge_seeking": 0.4,
+        "stillness": 0.45,
+        "expression": 0.55,
+        "systems": 0.6,
+        "communion": 0.6,
+        "service": 0.85,
+        "agency": 0.7,
+        "mystic": 0.35,
+        "tempo": 0.5,
+        "status_orientation": 0.5
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.35,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.65,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.5,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.55
+      },
+      "rationale": "Service + agency hybrid, systems for transformation, communion through 1:1, mid-scalable."
+    },
+    "Cold Plunge": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.85,
+        "edge_seeking": 0.7,
+        "stillness": 0.6,
+        "expression": 0.2,
+        "systems": 0.35,
+        "communion": 0.45,
+        "service": 0.2,
+        "agency": 0.55,
+        "mystic": 0.4,
+        "tempo": 0.3,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.25,
+        "creative_output": 0.1,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.35,
+        "beginner_friendliness": 0.6,
+        "mastery_curve": 0.35,
+        "transmission_style": 0.55
+      },
+      "rationale": "Edge-seeking through discomfort, embodied stillness practice, biohacker overlap, low depth."
+    },
+    "Fasting": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.65,
+        "edge_seeking": 0.55,
+        "stillness": 0.7,
+        "expression": 0.15,
+        "systems": 0.5,
+        "communion": 0.25,
+        "service": 0.3,
+        "agency": 0.6,
+        "mystic": 0.5,
+        "tempo": 0.2,
+        "status_orientation": 0.3
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.1,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.45,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.45,
+        "transmission_style": 0.7
+      },
+      "rationale": "Embodied edge through restriction, slow tempo, solo practice, mystic/purification aspect."
+    },
+    "Healing": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.6,
+        "edge_seeking": 0.4,
+        "stillness": 0.65,
+        "expression": 0.4,
+        "systems": 0.55,
+        "communion": 0.55,
+        "service": 0.95,
+        "agency": 0.55,
+        "mystic": 0.85,
+        "tempo": 0.35,
+        "status_orientation": 0.2
+      },
+      "collaboration": {
+        "technical_depth": 0.6,
+        "creative_output": 0.3,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.6,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.8,
+        "beginner_friendliness": 0.35,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.25
+      },
+      "rationale": "Peak service + mystic, many modalities, lineage transmission, Bali healing ecosystem."
+    },
+    "Meditation": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.55,
+        "edge_seeking": 0.25,
+        "stillness": 0.95,
+        "expression": 0.15,
+        "systems": 0.45,
+        "communion": 0.35,
+        "service": 0.45,
+        "agency": 0.35,
+        "mystic": 0.75,
+        "tempo": 0.1,
+        "status_orientation": 0.1
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.1,
+        "executor_energy": 0.25,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.1
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.85,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.45
+      },
+      "rationale": "Peak stillness, mystic depth, accessible entry but infinite ceiling, low external orientation."
+    },
+    "Nutrition": {
+      "personality": {
+        "openness": 0.5,
+        "embodiment": 0.6,
+        "edge_seeking": 0.3,
+        "stillness": 0.4,
+        "expression": 0.3,
+        "systems": 0.7,
+        "communion": 0.35,
+        "service": 0.7,
+        "agency": 0.55,
+        "mystic": 0.2,
+        "tempo": 0.45,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.65,
+        "creative_output": 0.25,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.65,
+        "mastery_curve": 0.65,
+        "transmission_style": 0.7
+      },
+      "rationale": "Systems-based health optimization, service through advice, science-informed, scalable content."
+    },
+    "Permaculture": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.65,
+        "edge_seeking": 0.25,
+        "stillness": 0.7,
+        "expression": 0.25,
+        "systems": 0.8,
+        "communion": 0.5,
+        "service": 0.7,
+        "agency": 0.55,
+        "mystic": 0.55,
+        "tempo": 0.15,
+        "status_orientation": 0.1
+      },
+      "collaboration": {
+        "technical_depth": 0.7,
+        "creative_output": 0.3,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.75,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.8,
+        "beginner_friendliness": 0.5,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.4
+      },
+      "rationale": "Systems thinking for ecology, slow tempo, internal orientation, service to land/community, visionary."
+    },
+    "Philosophy": {
+      "personality": {
+        "openness": 0.95,
+        "embodiment": 0.1,
+        "edge_seeking": 0.45,
+        "stillness": 0.7,
+        "expression": 0.55,
+        "systems": 0.9,
+        "communion": 0.4,
+        "service": 0.4,
+        "agency": 0.45,
+        "mystic": 0.6,
+        "tempo": 0.3,
+        "status_orientation": 0.3
+      },
+      "collaboration": {
+        "technical_depth": 0.75,
+        "creative_output": 0.55,
+        "executor_energy": 0.3,
+        "visionary_energy": 0.9,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.1
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.5,
+        "mastery_curve": 0.95,
+        "transmission_style": 0.85
+      },
+      "rationale": "Peak openness + systems, visionary abstraction, long mastery curve, scalable through text."
+    },
+    "Plant Medicine": {
+      "personality": {
+        "openness": 0.9,
+        "embodiment": 0.65,
+        "edge_seeking": 0.85,
+        "stillness": 0.55,
+        "expression": 0.35,
+        "systems": 0.45,
+        "communion": 0.6,
+        "service": 0.45,
+        "agency": 0.35,
+        "mystic": 0.95,
+        "tempo": 0.35,
+        "status_orientation": 0.2
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.3,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.85,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.15,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.15
+      },
+      "rationale": "Peak mystic + edge-seeking, consciousness exploration, ceremonial communion, steep entry, embodied transmission."
+    },
+    "Psychology": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.25,
+        "edge_seeking": 0.35,
+        "stillness": 0.55,
+        "expression": 0.45,
+        "systems": 0.8,
+        "communion": 0.5,
+        "service": 0.75,
+        "agency": 0.5,
+        "mystic": 0.35,
+        "tempo": 0.4,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.75,
+        "creative_output": 0.35,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.8,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.75
+      },
+      "rationale": "Systems for mind, service orientation, academic depth, scalable through content/books."
+    },
+    "Reiki": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.55,
+        "edge_seeking": 0.3,
+        "stillness": 0.75,
+        "expression": 0.25,
+        "systems": 0.4,
+        "communion": 0.5,
+        "service": 0.85,
+        "agency": 0.4,
+        "mystic": 0.9,
+        "tempo": 0.2,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.15,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.6,
+        "mastery_curve": 0.65,
+        "transmission_style": 0.15
+      },
+      "rationale": "Energy healing modality, mystic/stillness, service through channeling, attunement transmission, accessible entry."
+    },
+    "Skincare": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.55,
+        "edge_seeking": 0.2,
+        "stillness": 0.4,
+        "expression": 0.45,
+        "systems": 0.45,
+        "communion": 0.4,
+        "service": 0.5,
+        "agency": 0.5,
+        "mystic": 0.15,
+        "tempo": 0.45,
+        "status_orientation": 0.6
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.35,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.45,
+        "transmission_style": 0.7
+      },
+      "rationale": "Self-care embodiment, moderate status orientation, product/routine systems, accessible, scalable content."
+    },
+    "Sound Healing": {
+      "personality": {
+        "openness": 0.8,
+        "embodiment": 0.6,
+        "edge_seeking": 0.35,
+        "stillness": 0.85,
+        "expression": 0.55,
+        "systems": 0.4,
+        "communion": 0.65,
+        "service": 0.8,
+        "agency": 0.45,
+        "mystic": 0.9,
+        "tempo": 0.2,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.5,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.15
+      },
+      "rationale": "Peak stillness + mystic, communion through ceremony, service facilitation, embodied transmission."
+    },
+    "Spirituality": {
+      "personality": {
+        "openness": 0.85,
+        "embodiment": 0.45,
+        "edge_seeking": 0.45,
+        "stillness": 0.7,
+        "expression": 0.45,
+        "systems": 0.5,
+        "communion": 0.55,
+        "service": 0.6,
+        "agency": 0.45,
+        "mystic": 0.95,
+        "tempo": 0.35,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.4,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.8,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.7,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.5
+      },
+      "rationale": "Broad mystic container, visionary seeking, internal orientation, many entry points."
+    },
+    "Tantra": {
+      "personality": {
+        "openness": 0.9,
+        "embodiment": 0.9,
+        "edge_seeking": 0.75,
+        "stillness": 0.55,
+        "expression": 0.6,
+        "systems": 0.55,
+        "communion": 0.75,
+        "service": 0.55,
+        "agency": 0.45,
+        "mystic": 0.95,
+        "tempo": 0.4,
+        "status_orientation": 0.2
+      },
+      "collaboration": {
+        "technical_depth": 0.65,
+        "creative_output": 0.35,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.65,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.2,
+        "mastery_curve": 0.9,
+        "transmission_style": 0.1
+      },
+      "rationale": "Peak mystic + embodiment fusion, edge-seeking through intimacy, lineage depth, embodied-only transmission."
+    },
+    "Therapy": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.3,
+        "edge_seeking": 0.35,
+        "stillness": 0.6,
+        "expression": 0.4,
+        "systems": 0.7,
+        "communion": 0.55,
+        "service": 0.9,
+        "agency": 0.5,
+        "mystic": 0.35,
+        "tempo": 0.4,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.75,
+        "creative_output": 0.25,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.8,
+        "beginner_friendliness": 0.25,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.45
+      },
+      "rationale": "Peak service, clinical systems, professional barrier, mid-scalable through group/content."
+    },
+    "Women's Circles": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.55,
+        "edge_seeking": 0.4,
+        "stillness": 0.6,
+        "expression": 0.65,
+        "systems": 0.35,
+        "communion": 0.9,
+        "service": 0.7,
+        "agency": 0.5,
+        "mystic": 0.75,
+        "tempo": 0.35,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.35,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.15
+      },
+      "rationale": "Peak communion, mystic container holding, service through facilitation, embodied group transmission."
+    },
+    "Animal Welfare": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.45,
+        "edge_seeking": 0.3,
+        "stillness": 0.45,
+        "expression": 0.35,
+        "systems": 0.4,
+        "communion": 0.55,
+        "service": 0.9,
+        "agency": 0.55,
+        "mystic": 0.3,
+        "tempo": 0.45,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.25,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.45,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.45,
+        "transmission_style": 0.55
+      },
+      "rationale": "Peak service to non-human, internal status, volunteering energy, accessible entry."
+    },
+    "Conservation": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.5,
+        "edge_seeking": 0.4,
+        "stillness": 0.5,
+        "expression": 0.35,
+        "systems": 0.65,
+        "communion": 0.5,
+        "service": 0.85,
+        "agency": 0.6,
+        "mystic": 0.4,
+        "tempo": 0.4,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.3,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.7,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.65,
+        "transmission_style": 0.55
+      },
+      "rationale": "Systems thinking for ecology, service + visionary, internal status, long-term orientation."
+    },
+    "Dating": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.5,
+        "edge_seeking": 0.55,
+        "stillness": 0.15,
+        "expression": 0.55,
+        "systems": 0.3,
+        "communion": 0.75,
+        "service": 0.25,
+        "agency": 0.6,
+        "mystic": 0.2,
+        "tempo": 0.7,
+        "status_orientation": 0.6
+      },
+      "collaboration": {
+        "technical_depth": 0.2,
+        "creative_output": 0.25,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.4,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.45,
+        "transmission_style": 0.6
+      },
+      "rationale": "Communion-seeking, edge through vulnerability, moderate status, low depth, scalable advice industry."
+    },
+    "Education": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.25,
+        "edge_seeking": 0.3,
+        "stillness": 0.5,
+        "expression": 0.55,
+        "systems": 0.65,
+        "communion": 0.55,
+        "service": 0.85,
+        "agency": 0.6,
+        "mystic": 0.25,
+        "tempo": 0.45,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.45,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.65,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.7
+      },
+      "rationale": "Peak teaching orientation, service through knowledge, systems for learning, scalable."
+    },
+    "LGBTQ+ Community": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.45,
+        "edge_seeking": 0.5,
+        "stillness": 0.35,
+        "expression": 0.7,
+        "systems": 0.35,
+        "communion": 0.85,
+        "service": 0.6,
+        "agency": 0.55,
+        "mystic": 0.35,
+        "tempo": 0.55,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.25,
+        "creative_output": 0.45,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.45,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.4,
+        "transmission_style": 0.55
+      },
+      "rationale": "Identity-based communion, expression through visibility, service to community, openness to difference."
+    },
+    "Mental Health": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.35,
+        "edge_seeking": 0.4,
+        "stillness": 0.55,
+        "expression": 0.45,
+        "systems": 0.6,
+        "communion": 0.55,
+        "service": 0.85,
+        "agency": 0.5,
+        "mystic": 0.35,
+        "tempo": 0.4,
+        "status_orientation": 0.25
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.3,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.65,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.65
+      },
+      "rationale": "Service orientation, systems for wellbeing, advocacy + practice, scalable awareness."
+    },
+    "Mentorship": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.25,
+        "edge_seeking": 0.35,
+        "stillness": 0.5,
+        "expression": 0.5,
+        "systems": 0.55,
+        "communion": 0.65,
+        "service": 0.9,
+        "agency": 0.65,
+        "mystic": 0.25,
+        "tempo": 0.45,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.3,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.5,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.65,
+        "transmission_style": 0.5
+      },
+      "rationale": "Peak service through guidance, 1:1 communion, agency in shaping others, relational transmission."
+    },
+    "Sustainability": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.4,
+        "edge_seeking": 0.35,
+        "stillness": 0.5,
+        "expression": 0.4,
+        "systems": 0.7,
+        "communion": 0.5,
+        "service": 0.75,
+        "agency": 0.6,
+        "mystic": 0.35,
+        "tempo": 0.4,
+        "status_orientation": 0.2
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.35,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.7,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.4
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.6,
+        "mastery_curve": 0.6,
+        "transmission_style": 0.65
+      },
+      "rationale": "Systems for ecology/future, service orientation, visionary, internal status, long-term thinking."
+    },
+    "Volunteering": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.45,
+        "edge_seeking": 0.3,
+        "stillness": 0.4,
+        "expression": 0.35,
+        "systems": 0.35,
+        "communion": 0.75,
+        "service": 0.95,
+        "agency": 0.5,
+        "mystic": 0.25,
+        "tempo": 0.45,
+        "status_orientation": 0.1
+      },
+      "collaboration": {
+        "technical_depth": 0.25,
+        "creative_output": 0.2,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.1
+      },
+      "curiosity": {
+        "teachable_depth": 0.35,
+        "beginner_friendliness": 0.9,
+        "mastery_curve": 0.3,
+        "transmission_style": 0.45
+      },
+      "rationale": "Peak service, communion through collective action, internal status, accessible, low depth."
+    },
+    "Networking": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.25,
+        "edge_seeking": 0.4,
+        "stillness": 0.1,
+        "expression": 0.5,
+        "systems": 0.4,
+        "communion": 0.75,
+        "service": 0.35,
+        "agency": 0.75,
+        "mystic": 0.05,
+        "tempo": 0.8,
+        "status_orientation": 0.8
+      },
+      "collaboration": {
+        "technical_depth": 0.15,
+        "creative_output": 0.2,
+        "executor_energy": 0.7,
+        "visionary_energy": 0.3,
+        "sales_distribution": 0.85,
+        "capital_risk_tolerance": 0.45
+      },
+      "curiosity": {
+        "teachable_depth": 0.35,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.4,
+        "transmission_style": 0.55
+      },
+      "rationale": "Distribution-focused, status-driven communion, fast tempo, low depth, agency through connections."
+    },
+    "Community": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.35,
+        "edge_seeking": 0.3,
+        "stillness": 0.35,
+        "expression": 0.45,
+        "systems": 0.45,
+        "communion": 0.9,
+        "service": 0.7,
+        "agency": 0.6,
+        "mystic": 0.3,
+        "tempo": 0.5,
+        "status_orientation": 0.3
+      },
+      "collaboration": {
+        "technical_depth": 0.3,
+        "creative_output": 0.35,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.45,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.5,
+        "transmission_style": 0.5
+      },
+      "rationale": "Peak communion, service through belonging, container building, accessible entry."
+    },
+    "Women's Empowerment": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.4,
+        "edge_seeking": 0.45,
+        "stillness": 0.4,
+        "expression": 0.65,
+        "systems": 0.4,
+        "communion": 0.8,
+        "service": 0.8,
+        "agency": 0.7,
+        "mystic": 0.45,
+        "tempo": 0.5,
+        "status_orientation": 0.3
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.45,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.6,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.5
+      },
+      "rationale": "Service + communion + agency, advocacy expression, visionary change, community-based transmission."
+    },
+    "Anime": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.15,
+        "edge_seeking": 0.3,
+        "stillness": 0.45,
+        "expression": 0.35,
+        "systems": 0.4,
+        "communion": 0.55,
+        "service": 0.2,
+        "agency": 0.3,
+        "mystic": 0.35,
+        "tempo": 0.5,
+        "status_orientation": 0.25
+      },
+      "collaboration": {
+        "technical_depth": 0.25,
+        "creative_output": 0.25,
+        "executor_energy": 0.25,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.1
+      },
+      "curiosity": {
+        "teachable_depth": 0.4,
+        "beginner_friendliness": 0.85,
+        "mastery_curve": 0.35,
+        "transmission_style": 0.8
+      },
+      "rationale": "Consumption-based fandom, openness to imaginary worlds, community through shared interest, low depth."
+    },
+    "Board Games": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.15,
+        "edge_seeking": 0.35,
+        "stillness": 0.45,
+        "expression": 0.25,
+        "systems": 0.7,
+        "communion": 0.7,
+        "service": 0.25,
+        "agency": 0.4,
+        "mystic": 0.1,
+        "tempo": 0.45,
+        "status_orientation": 0.3
+      },
+      "collaboration": {
+        "technical_depth": 0.4,
+        "creative_output": 0.15,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.5
+      },
+      "rationale": "Systems thinking through play, communion around table, accessible, strategic depth varies by game."
+    },
+    "Books": {
+      "personality": {
+        "openness": 0.85,
+        "embodiment": 0.1,
+        "edge_seeking": 0.25,
+        "stillness": 0.85,
+        "expression": 0.3,
+        "systems": 0.55,
+        "communion": 0.25,
+        "service": 0.3,
+        "agency": 0.35,
+        "mystic": 0.45,
+        "tempo": 0.2,
+        "status_orientation": 0.2
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.2,
+        "executor_energy": 0.25,
+        "visionary_energy": 0.55,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.1
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.9,
+        "mastery_curve": 0.5,
+        "transmission_style": 0.95
+      },
+      "rationale": "Peak stillness + openness consumption, solitary, internal orientation, infinitely scalable."
+    },
+    "Cars / Motorcycles": {
+      "personality": {
+        "openness": 0.35,
+        "embodiment": 0.55,
+        "edge_seeking": 0.55,
+        "stillness": 0.2,
+        "expression": 0.4,
+        "systems": 0.5,
+        "communion": 0.45,
+        "service": 0.15,
+        "agency": 0.6,
+        "mystic": 0.1,
+        "tempo": 0.7,
+        "status_orientation": 0.7
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.25,
+        "executor_energy": 0.5,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.45
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.5,
+        "mastery_curve": 0.6,
+        "transmission_style": 0.45
+      },
+      "rationale": "Status + edge through machines, technical tinkering, embodied through driving, enthusiast community."
+    },
+    "Chess": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.05,
+        "edge_seeking": 0.45,
+        "stillness": 0.65,
+        "expression": 0.15,
+        "systems": 0.92,
+        "communion": 0.35,
+        "service": 0.2,
+        "agency": 0.55,
+        "mystic": 0.15,
+        "tempo": 0.4,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.8,
+        "creative_output": 0.15,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.9,
+        "beginner_friendliness": 0.6,
+        "mastery_curve": 0.95,
+        "transmission_style": 0.7
+      },
+      "rationale": "Peak systems, deep mastery curve, competitive edge, accessible entry but infinite ceiling."
+    },
+    "Cocktails": {
+      "personality": {
+        "openness": 0.5,
+        "embodiment": 0.4,
+        "edge_seeking": 0.3,
+        "stillness": 0.25,
+        "expression": 0.45,
+        "systems": 0.4,
+        "communion": 0.65,
+        "service": 0.45,
+        "agency": 0.45,
+        "mystic": 0.1,
+        "tempo": 0.55,
+        "status_orientation": 0.55
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.5,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.65,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.55
+      },
+      "rationale": "Craft consumption, communion through drinking culture, creative expression, hospitality adjacent."
+    },
+    "Coffee": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.35,
+        "edge_seeking": 0.2,
+        "stillness": 0.45,
+        "expression": 0.3,
+        "systems": 0.45,
+        "communion": 0.5,
+        "service": 0.35,
+        "agency": 0.4,
+        "mystic": 0.15,
+        "tempo": 0.5,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.3,
+        "executor_energy": 0.4,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.55,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.55
+      },
+      "rationale": "Third-wave craft archetype, café culture communion, accessible entry, moderate depth."
+    },
+    "Comedy": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.5,
+        "edge_seeking": 0.6,
+        "stillness": 0.1,
+        "expression": 0.95,
+        "systems": 0.45,
+        "communion": 0.8,
+        "service": 0.4,
+        "agency": 0.65,
+        "mystic": 0.2,
+        "tempo": 0.9,
+        "status_orientation": 0.6
+      },
+      "collaboration": {
+        "technical_depth": 0.55,
+        "creative_output": 0.85,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.75,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.75,
+        "transmission_style": 0.55
+      },
+      "rationale": "Peak expression + tempo, communion through laughter, edge through truth-telling, performance craft."
+    },
+    "Cooking": {
+      "personality": {
+        "openness": 0.6,
+        "embodiment": 0.7,
+        "edge_seeking": 0.25,
+        "stillness": 0.5,
+        "expression": 0.55,
+        "systems": 0.55,
+        "communion": 0.65,
+        "service": 0.65,
+        "agency": 0.55,
+        "mystic": 0.25,
+        "tempo": 0.45,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.65,
+        "creative_output": 0.65,
+        "executor_energy": 0.6,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.8,
+        "beginner_friendliness": 0.85,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.5
+      },
+      "rationale": "Embodied craft, service through nourishment, communion through sharing, deep mastery, accessible entry."
+    },
+    "Film & TV": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.15,
+        "edge_seeking": 0.25,
+        "stillness": 0.5,
+        "expression": 0.25,
+        "systems": 0.35,
+        "communion": 0.5,
+        "service": 0.2,
+        "agency": 0.25,
+        "mystic": 0.3,
+        "tempo": 0.45,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.2,
+        "creative_output": 0.15,
+        "executor_energy": 0.2,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.25,
+        "capital_risk_tolerance": 0.1
+      },
+      "curiosity": {
+        "teachable_depth": 0.35,
+        "beginner_friendliness": 0.95,
+        "mastery_curve": 0.3,
+        "transmission_style": 0.9
+      },
+      "rationale": "Consumption interest, openness through narrative, communion through shared watching, low depth."
+    },
+    "Food": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.6,
+        "edge_seeking": 0.3,
+        "stillness": 0.35,
+        "expression": 0.4,
+        "systems": 0.35,
+        "communion": 0.65,
+        "service": 0.45,
+        "agency": 0.4,
+        "mystic": 0.2,
+        "tempo": 0.5,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.4,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.3,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.9,
+        "mastery_curve": 0.45,
+        "transmission_style": 0.6
+      },
+      "rationale": "Embodied appreciation, communion through eating together, explorer archetype, accessible."
+    },
+    "Gaming": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.15,
+        "edge_seeking": 0.45,
+        "stillness": 0.3,
+        "expression": 0.3,
+        "systems": 0.6,
+        "communion": 0.55,
+        "service": 0.2,
+        "agency": 0.45,
+        "mystic": 0.2,
+        "tempo": 0.7,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.4,
+        "creative_output": 0.2,
+        "executor_energy": 0.4,
+        "visionary_energy": 0.3,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.45,
+        "beginner_friendliness": 0.75,
+        "mastery_curve": 0.55,
+        "transmission_style": 0.75
+      },
+      "rationale": "Systems through play, competitive edge, online communion, varied depth by game type."
+    },
+    "Improv": {
+      "personality": {
+        "openness": 0.8,
+        "embodiment": 0.6,
+        "edge_seeking": 0.65,
+        "stillness": 0.05,
+        "expression": 0.95,
+        "systems": 0.35,
+        "communion": 0.85,
+        "service": 0.4,
+        "agency": 0.5,
+        "mystic": 0.25,
+        "tempo": 0.95,
+        "status_orientation": 0.4
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.75,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.25
+      },
+      "curiosity": {
+        "teachable_depth": 0.65,
+        "beginner_friendliness": 0.65,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.25
+      },
+      "rationale": "Peak tempo + expression, communion through yes-and, edge through public vulnerability, embodied transmission."
+    },
+    "Languages": {
+      "personality": {
+        "openness": 0.8,
+        "embodiment": 0.3,
+        "edge_seeking": 0.35,
+        "stillness": 0.45,
+        "expression": 0.55,
+        "systems": 0.65,
+        "communion": 0.55,
+        "service": 0.35,
+        "agency": 0.5,
+        "mystic": 0.25,
+        "tempo": 0.45,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.6,
+        "creative_output": 0.35,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.4,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.85,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.9,
+        "transmission_style": 0.6
+      },
+      "rationale": "Systems of meaning, openness to other cultures, long mastery curve, scalable through apps/content."
+    },
+    "Live Music": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.65,
+        "edge_seeking": 0.45,
+        "stillness": 0.2,
+        "expression": 0.5,
+        "systems": 0.25,
+        "communion": 0.9,
+        "service": 0.25,
+        "agency": 0.35,
+        "mystic": 0.45,
+        "tempo": 0.75,
+        "status_orientation": 0.35
+      },
+      "collaboration": {
+        "technical_depth": 0.2,
+        "creative_output": 0.2,
+        "executor_energy": 0.3,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.25,
+        "beginner_friendliness": 0.95,
+        "mastery_curve": 0.2,
+        "transmission_style": 0.35
+      },
+      "rationale": "Peak communion through shared experience, embodied audience, low depth (consumption), mystic collective moment."
+    },
+    "Music Festivals": {
+      "personality": {
+        "openness": 0.7,
+        "embodiment": 0.7,
+        "edge_seeking": 0.6,
+        "stillness": 0.05,
+        "expression": 0.55,
+        "systems": 0.15,
+        "communion": 0.95,
+        "service": 0.2,
+        "agency": 0.4,
+        "mystic": 0.5,
+        "tempo": 0.9,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.1,
+        "creative_output": 0.2,
+        "executor_energy": 0.3,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.15,
+        "beginner_friendliness": 0.9,
+        "mastery_curve": 0.15,
+        "transmission_style": 0.4
+      },
+      "rationale": "Peak communion + tempo, experiential edge, mystic collective, consumption-based, low depth."
+    },
+    "Nightlife": {
+      "personality": {
+        "openness": 0.45,
+        "embodiment": 0.6,
+        "edge_seeking": 0.55,
+        "stillness": 0.05,
+        "expression": 0.5,
+        "systems": 0.15,
+        "communion": 0.8,
+        "service": 0.2,
+        "agency": 0.5,
+        "mystic": 0.2,
+        "tempo": 0.9,
+        "status_orientation": 0.65
+      },
+      "collaboration": {
+        "technical_depth": 0.1,
+        "creative_output": 0.2,
+        "executor_energy": 0.4,
+        "visionary_energy": 0.2,
+        "sales_distribution": 0.45,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.15,
+        "beginner_friendliness": 0.85,
+        "mastery_curve": 0.2,
+        "transmission_style": 0.4
+      },
+      "rationale": "Communion + status seeking, fast tempo, embodied through dance/socializing, low depth, edge through hedonism."
+    },
+    "Pets": {
+      "personality": {
+        "openness": 0.4,
+        "embodiment": 0.45,
+        "edge_seeking": 0.1,
+        "stillness": 0.55,
+        "expression": 0.3,
+        "systems": 0.25,
+        "communion": 0.45,
+        "service": 0.65,
+        "agency": 0.4,
+        "mystic": 0.2,
+        "tempo": 0.35,
+        "status_orientation": 0.15
+      },
+      "collaboration": {
+        "technical_depth": 0.2,
+        "creative_output": 0.15,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.15,
+        "sales_distribution": 0.2,
+        "capital_risk_tolerance": 0.15
+      },
+      "curiosity": {
+        "teachable_depth": 0.35,
+        "beginner_friendliness": 0.9,
+        "mastery_curve": 0.35,
+        "transmission_style": 0.55
+      },
+      "rationale": "Service to animal, internal orientation, low edge, slow tempo, accessible, emotional connection."
+    },
+    "Poker": {
+      "personality": {
+        "openness": 0.45,
+        "embodiment": 0.15,
+        "edge_seeking": 0.75,
+        "stillness": 0.45,
+        "expression": 0.25,
+        "systems": 0.8,
+        "communion": 0.55,
+        "service": 0.1,
+        "agency": 0.65,
+        "mystic": 0.1,
+        "tempo": 0.55,
+        "status_orientation": 0.8
+      },
+      "collaboration": {
+        "technical_depth": 0.75,
+        "creative_output": 0.15,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.9
+      },
+      "curiosity": {
+        "teachable_depth": 0.8,
+        "beginner_friendliness": 0.5,
+        "mastery_curve": 0.85,
+        "transmission_style": 0.65
+      },
+      "rationale": "Systems + edge + status, capital risk tolerance, strategic depth, communion around table, competitive."
+    },
+    "Plant-based Living": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.55,
+        "edge_seeking": 0.3,
+        "stillness": 0.5,
+        "expression": 0.4,
+        "systems": 0.45,
+        "communion": 0.5,
+        "service": 0.6,
+        "agency": 0.55,
+        "mystic": 0.4,
+        "tempo": 0.35,
+        "status_orientation": 0.25
+      },
+      "collaboration": {
+        "technical_depth": 0.35,
+        "creative_output": 0.3,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.5,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.5,
+        "beginner_friendliness": 0.7,
+        "mastery_curve": 0.45,
+        "transmission_style": 0.7
+      },
+      "rationale": "Ethical embodiment, service orientation, internal status, lifestyle identity, accessible transition."
+    },
+    "Tea": {
+      "personality": {
+        "openness": 0.65,
+        "embodiment": 0.45,
+        "edge_seeking": 0.1,
+        "stillness": 0.85,
+        "expression": 0.25,
+        "systems": 0.45,
+        "communion": 0.45,
+        "service": 0.35,
+        "agency": 0.35,
+        "mystic": 0.5,
+        "tempo": 0.1,
+        "status_orientation": 0.2
+      },
+      "collaboration": {
+        "technical_depth": 0.45,
+        "creative_output": 0.2,
+        "executor_energy": 0.25,
+        "visionary_energy": 0.35,
+        "sales_distribution": 0.3,
+        "capital_risk_tolerance": 0.2
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.8,
+        "mastery_curve": 0.65,
+        "transmission_style": 0.5
+      },
+      "rationale": "Peak stillness, ceremony/ritual, low edge, internal orientation, craft depth available but not required."
+    },
+    "Theatre": {
+      "personality": {
+        "openness": 0.8,
+        "embodiment": 0.7,
+        "edge_seeking": 0.55,
+        "stillness": 0.25,
+        "expression": 0.95,
+        "systems": 0.4,
+        "communion": 0.75,
+        "service": 0.4,
+        "agency": 0.5,
+        "mystic": 0.4,
+        "tempo": 0.65,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.6,
+        "creative_output": 0.85,
+        "executor_energy": 0.55,
+        "visionary_energy": 0.6,
+        "sales_distribution": 0.55,
+        "capital_risk_tolerance": 0.3
+      },
+      "curiosity": {
+        "teachable_depth": 0.75,
+        "beginner_friendliness": 0.55,
+        "mastery_curve": 0.8,
+        "transmission_style": 0.2
+      },
+      "rationale": "Peak expression, embodied performance, communion through ensemble, edge through public vulnerability."
+    },
+    "Travel": {
+      "personality": {
+        "openness": 0.75,
+        "embodiment": 0.5,
+        "edge_seeking": 0.55,
+        "stillness": 0.25,
+        "expression": 0.4,
+        "systems": 0.25,
+        "communion": 0.5,
+        "service": 0.2,
+        "agency": 0.55,
+        "mystic": 0.4,
+        "tempo": 0.6,
+        "status_orientation": 0.45
+      },
+      "collaboration": {
+        "technical_depth": 0.15,
+        "creative_output": 0.35,
+        "executor_energy": 0.45,
+        "visionary_energy": 0.45,
+        "sales_distribution": 0.35,
+        "capital_risk_tolerance": 0.4
+      },
+      "curiosity": {
+        "teachable_depth": 0.3,
+        "beginner_friendliness": 0.9,
+        "mastery_curve": 0.25,
+        "transmission_style": 0.7
+      },
+      "rationale": "Openness to novelty, edge through unknown, low depth (consumption), nomad identity, accessible."
+    },
+    "Wine": {
+      "personality": {
+        "openness": 0.55,
+        "embodiment": 0.4,
+        "edge_seeking": 0.2,
+        "stillness": 0.45,
+        "expression": 0.35,
+        "systems": 0.5,
+        "communion": 0.55,
+        "service": 0.3,
+        "agency": 0.4,
+        "mystic": 0.2,
+        "tempo": 0.35,
+        "status_orientation": 0.6
+      },
+      "collaboration": {
+        "technical_depth": 0.5,
+        "creative_output": 0.25,
+        "executor_energy": 0.35,
+        "visionary_energy": 0.25,
+        "sales_distribution": 0.4,
+        "capital_risk_tolerance": 0.35
+      },
+      "curiosity": {
+        "teachable_depth": 0.6,
+        "beginner_friendliness": 0.6,
+        "mastery_curve": 0.7,
+        "transmission_style": 0.6
+      },
+      "rationale": "Connoisseur systems, status through knowledge, communion through tasting, sensory embodiment, moderate depth."
+    }
+  }
+}

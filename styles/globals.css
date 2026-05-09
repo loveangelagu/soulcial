@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #faf8f5;
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  overscroll-behavior: none;
+}
+
+#__next {
+  min-height: 100dvh;
+}
