@@ -90,7 +90,7 @@ export default function Home() {
       <Hero />
 
       {/* Step 1 — interest picker */}
-      <section className="px-4 mb-8">
+      <section className="px-4 mb-16">
         <SectionHeading n={1}>Pick what you're into</SectionHeading>
         <div className="max-w-3xl mx-auto">
           <InterestPicker selected={interests} onChange={setInterests} />
@@ -99,13 +99,13 @@ export default function Home() {
 
       {/* Step 2 — personality reveal (only after they pick something) */}
       {interests.length > 0 && (
-        <section className="px-4 mb-8">
+        <section className="px-4 mb-16">
           <SectionHeading n={2}>Who you are, mathematically</SectionHeading>
-          <div className="max-w-3xl mx-auto bg-paper rounded-3xl border-[3px] border-lavender-pale shadow-[0_4px_0_0_#e9e0ff] p-6 flex flex-col md:flex-row items-center gap-6">
+          <div className="max-w-3xl mx-auto bg-paper rounded-3xl border-[3px] border-lavender-pale shadow-card p-8 md:p-10 flex flex-col md:flex-row items-center gap-8">
             <PersonalityRadar vector={vec} />
-            <div className="flex flex-col items-center gap-3">
-              <AvatarSprite archetype={tagline.avatar} size={96} />
-              <div className="font-pixel text-2xl text-purple-dark text-center max-w-[220px]">
+            <div className="flex flex-col items-center gap-4">
+              <AvatarSprite archetype={tagline.avatar} size={128} />
+              <div className="font-pixel text-pixel-2xl md:text-pixel-3xl text-purple-dark text-center max-w-[280px]">
                 {tagline.text}
               </div>
             </div>
@@ -115,9 +115,9 @@ export default function Home() {
 
       {/* Step 3 — tune your week */}
       {interests.length > 0 && (
-        <section className="px-4 mb-8">
+        <section className="px-4 mb-16">
           <SectionHeading n={3}>Tune your week</SectionHeading>
-          <div className="max-w-2xl mx-auto bg-paper rounded-3xl border-[3px] border-lavender-pale shadow-[0_4px_0_0_#e9e0ff] p-6">
+          <div className="max-w-3xl mx-auto bg-paper rounded-3xl border-[3px] border-lavender-pale shadow-card p-8 md:p-10">
             <VibeTuner values={sliders} onChange={setSliders} previewDays={days} />
           </div>
         </section>
@@ -126,13 +126,13 @@ export default function Home() {
       {/* Step 4 — Your plan (shown automatically once interests are picked;
           the live preview in step 3 already gave the user a glimpse) */}
       {interests.length > 0 && (
-        <section className="px-4 mb-12">
+        <section className="px-4 mb-20">
           <SectionHeading n={4}>Your week</SectionHeading>
           <div className="max-w-7xl mx-auto">
             {loading ? (
-              <div className="text-center text-muted">loading events…</div>
+              <div className="text-center text-muted text-lg">loading events…</div>
             ) : events.length === 0 ? (
-              <div className="text-center text-muted">no events tagged yet — run the scraper + tagger first.</div>
+              <div className="text-center text-muted text-lg">no events tagged yet — run the scraper + tagger first.</div>
             ) : (
               <>
                 <WeeklyPlan
@@ -187,7 +187,7 @@ export default function Home() {
 
 function SectionHeading({ n, children }: { n: number; children: React.ReactNode }) {
   return (
-    <h2 className="font-pixel text-3xl text-purple-dark text-center mb-4">
+    <h2 className="font-pixel text-pixel-3xl md:text-pixel-4xl text-purple-dark text-center mb-8 md:mb-10">
       <span className="text-purple-primary">{n}.</span> {children}
     </h2>
   )

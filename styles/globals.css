@@ -12,10 +12,20 @@ body {
   font-family: Inter, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.55;
   overscroll-behavior: none;
+  color: #1a1a2e;
 }
 
 #__next {
   min-height: 100dvh;
+}
+
+/* VT323 reads optically smaller than its nominal size and runs flush.
+   Add a touch of letter-spacing and a tighter line-height so pixel headings
+   feel intentional at the larger scale. */
+.font-pixel {
+  letter-spacing: 0.01em;
+  line-height: 1.05;
 }

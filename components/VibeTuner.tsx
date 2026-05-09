@@ -36,13 +36,13 @@ export function VibeTuner({
   const isDefault = activePreset === 'balanced' && isAllDefault(values)
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-10">
       <PresetChips
         active={activePreset}
         onPick={(p) => onChange({ ...values, ...PRESETS[p] })}
       />
 
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-8 divide-y divide-lavender-pale">
         <TunerSlider
           label="Pace"
           help="How packed should your week feel?"
@@ -50,20 +50,24 @@ export function VibeTuner({
           stops={PACE_LABELS}
           onChange={(v) => set('tempo', v)}
         />
-        <TunerSlider
-          label="Social"
-          help="How much people-time do you want?"
-          value={values.social}
-          stops={SOCIAL_LABELS}
-          onChange={(v) => set('social', v)}
-        />
-        <TunerSlider
-          label="Comfort vs Stretch"
-          help="Stick to what you know, or try new things?"
-          value={values.stretch}
-          stops={STRETCH_LABELS}
-          onChange={(v) => set('stretch', v)}
-        />
+        <div className="pt-8">
+          <TunerSlider
+            label="Social"
+            help="How much people-time do you want?"
+            value={values.social}
+            stops={SOCIAL_LABELS}
+            onChange={(v) => set('social', v)}
+          />
+        </div>
+        <div className="pt-8">
+          <TunerSlider
+            label="Comfort vs Stretch"
+            help="Stick to what you know, or try new things?"
+            value={values.stretch}
+            stops={STRETCH_LABELS}
+            onChange={(v) => set('stretch', v)}
+          />
+        </div>
       </div>
 
       <MoreOptions
@@ -97,7 +101,7 @@ export function VibeTuner({
         <button
           type="button"
           onClick={() => onChange({ ...DEFAULT_SLIDERS })}
-          className="self-center text-xs text-muted hover:text-purple-deep underline-offset-4 hover:underline transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary rounded"
+          className="self-center text-sm text-purple-deep hover:text-purple-dark underline-offset-4 hover:underline transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary rounded px-2 py-1"
         >
           reset to balanced
         </button>
@@ -191,17 +195,17 @@ function PresetChips({
 }) {
   return (
     <div>
-      <div className="flex items-center justify-between mb-2">
-        <span className="font-pixel text-sm text-purple-dark uppercase tracking-wider">
+      <div className="flex items-center justify-between mb-4">
+        <span className="font-pixel text-pixel-base text-purple-dark uppercase tracking-wider">
           quick start
         </span>
         {active === null && (
-          <span className="text-[10px] font-pixel uppercase tracking-wider text-purple-deep bg-lavender-light px-2 py-0.5 rounded-full">
+          <span className="text-pixel-xs font-pixel uppercase tracking-wider text-purple-deep bg-lavender-light px-3 py-1 rounded-full">
             custom
           </span>
         )}
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {PRESET_META.map((p) => {
           const on = active === p.id
           return (
@@ -211,20 +215,20 @@ function PresetChips({
               onClick={() => onPick(p.id)}
               aria-pressed={on}
               className={[
-                'min-h-[44px] px-3 py-2 rounded-2xl border-2 text-left transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary',
+                'min-h-[64px] px-4 py-3 rounded-2xl border-2 text-left transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary',
                 on
-                  ? 'bg-purple-primary text-white border-purple-deep shadow-[0_3px_0_0_#4a2a8a]'
-                  : 'bg-paper text-ink border-lavender-pale shadow-[0_2px_0_0_#e9e0ff] hover:border-purple-primary hover:bg-lavender-light',
+                  ? 'bg-purple-primary text-white border-purple-deep shadow-press'
+                  : 'bg-paper text-ink border-lavender-pale shadow-card-sm hover:border-purple-primary hover:bg-lavender-light',
               ].join(' ')}
             >
-              <div className="flex items-center gap-1.5">
-                <span aria-hidden="true">{p.emoji}</span>
-                <span className="font-pixel text-base leading-none">{p.label}</span>
+              <div className="flex items-center gap-2">
+                <span aria-hidden="true" className="text-2xl leading-none">{p.emoji}</span>
+                <span className="font-pixel text-pixel-lg leading-none">{p.label}</span>
               </div>
               <div
                 className={[
-                  'text-[10px] mt-0.5',
-                  on ? 'text-white/80' : 'text-muted',
+                  'text-sm mt-1.5',
+                  on ? 'text-white/85' : 'text-muted',
                 ].join(' ')}
               >
                 {p.sub}
@@ -287,22 +291,22 @@ function TunerSlider({
 
   return (
     <div>
-      <div className="flex items-baseline justify-between mb-1">
+      <div className="flex items-center justify-between gap-3 mb-2">
         <label
           id={labelId}
           htmlFor={id}
-          className="font-pixel text-base text-purple-dark"
+          className="font-pixel text-pixel-2xl text-purple-dark"
         >
           {label}
         </label>
         <span
           id={valueId}
-          className="font-pixel text-sm text-purple-deep bg-lavender-light px-2 py-0.5 rounded-full"
+          className="font-pixel text-pixel-base text-purple-deep bg-purple-primary/15 border border-purple-primary/30 px-3 py-1 rounded-full whitespace-nowrap"
         >
           {current}
         </span>
       </div>
-      <p className="text-[11px] text-muted mb-2">{help}</p>
+      <p className="text-base text-muted mb-4">{help}</p>
 
       {/* 44px hit area wraps the visually thinner track */}
       <div className="relative py-3">
@@ -317,14 +321,14 @@ function TunerSlider({
           aria-labelledby={labelId}
           aria-describedby={valueId}
           aria-valuetext={current}
-          className="vibe-slider w-full h-2 rounded-full appearance-none bg-lavender-pale accent-purple-deep cursor-pointer"
+          className="vibe-slider w-full h-3 rounded-full appearance-none bg-lavender-pale accent-purple-deep cursor-pointer"
         />
-        <div className="flex justify-between mt-1 px-[14px]" aria-hidden="true">
+        <div className="flex justify-between mt-2 px-[18px]" aria-hidden="true">
           {stops.map((_, i) => (
             <span
               key={i}
               className={[
-                'h-1.5 w-1.5 rounded-full transition-colors',
+                'h-2.5 w-2.5 rounded-full transition-colors',
                 i === idx ? 'bg-purple-deep' : 'bg-lavender-pale',
               ].join(' ')}
             />
@@ -336,21 +340,21 @@ function TunerSlider({
         .vibe-slider::-webkit-slider-thumb {
           -webkit-appearance: none;
           appearance: none;
-          width: 28px;
-          height: 28px;
+          width: 36px;
+          height: 36px;
           border-radius: 9999px;
           background: #7c3aed;
-          border: 3px solid #fffdf8;
-          box-shadow: 0 2px 0 0 #4a2a8a;
+          border: 4px solid #fffdf8;
+          box-shadow: 0 3px 0 0 #4a2a8a;
           cursor: pointer;
         }
         .vibe-slider::-moz-range-thumb {
-          width: 28px;
-          height: 28px;
+          width: 36px;
+          height: 36px;
           border-radius: 9999px;
           background: #7c3aed;
-          border: 3px solid #fffdf8;
-          box-shadow: 0 2px 0 0 #4a2a8a;
+          border: 4px solid #fffdf8;
+          box-shadow: 0 3px 0 0 #4a2a8a;
           cursor: pointer;
         }
       `}</style>
@@ -416,23 +420,23 @@ function MoreOptions({
         if ((e.currentTarget as HTMLDetailsElement).open) trackAdvancedFilterOpened()
       }}
     >
-      <summary className="cursor-pointer list-none px-4 py-3 flex items-center justify-between gap-3 font-pixel text-sm text-purple-dark uppercase tracking-wider select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary">
+      <summary className="cursor-pointer list-none px-5 py-4 flex items-center justify-between gap-3 font-pixel text-pixel-lg text-purple-dark uppercase tracking-wider select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary">
         <span>more filters</span>
-        <span className="text-[10px] normal-case tracking-normal text-muted text-right">
+        <span className="text-sm normal-case tracking-normal text-muted text-right">
           {activeFilterSummary(values)}
         </span>
         <span
-          className="text-purple-deep transition-transform group-open:rotate-180"
+          className="text-purple-deep text-xl transition-transform group-open:rotate-180"
           aria-hidden="true"
         >
           ▾
         </span>
       </summary>
 
-      <div className="px-4 pb-4 pt-1 flex flex-col gap-4">
+      <div className="px-5 pb-5 pt-2 flex flex-col gap-6">
         {/* Time of day */}
         <FieldGroup label="Time of day">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2.5">
             {TIME_META.map((t) => {
               const on = values.timeOfDay.includes(t.id)
               return (
@@ -445,9 +449,9 @@ function MoreOptions({
                     onSet({ timeOfDay: next.length === 0 ? [...ALL_TIMES_OF_DAY] : next.sort() })
                   }}
                 >
-                  <span aria-hidden="true">{t.emoji}</span>
+                  <span aria-hidden="true" className="text-lg">{t.emoji}</span>
                   <span>{t.label}</span>
-                  <span className="text-[10px] opacity-70 ml-0.5">({t.range})</span>
+                  <span className="text-sm opacity-70 ml-1">({t.range})</span>
                 </Chip>
               )
             })}
@@ -456,7 +460,7 @@ function MoreOptions({
 
         {/* Days available */}
         <FieldGroup label="Days available">
-          <div className="flex gap-1.5">
+          <div className="flex gap-2">
             {DAY_META.map((d) => {
               const on = values.daysAvailable.includes(d.id)
               return (
@@ -474,9 +478,9 @@ function MoreOptions({
                   aria-pressed={on}
                   aria-label={DAY_NAME[d.id]}
                   className={[
-                    'flex-1 min-h-[44px] rounded-xl border-2 font-pixel text-base transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary',
+                    'flex-1 min-h-[52px] rounded-xl border-2 font-pixel text-pixel-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary',
                     on
-                      ? 'bg-purple-primary text-white border-purple-deep shadow-[0_2px_0_0_#4a2a8a]'
+                      ? 'bg-purple-primary text-white border-purple-deep shadow-press'
                       : 'bg-paper text-ink border-lavender-pale hover:border-purple-primary',
                   ].join(' ')}
                 >
@@ -508,12 +512,14 @@ function MoreOptions({
         {/* Coming soon: budget + area. Placeholder to reserve the design space.
             TODO: enable when tagger emits `price_band` + `neighborhood`. */}
         <FieldGroup label="Coming soon">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2.5">
             <Chip on={false} disabled title="needs price_band field from tagger">
-              💸 budget
+              <span className="text-lg" aria-hidden="true">💸</span>
+              <span>budget</span>
             </Chip>
             <Chip on={false} disabled title="needs neighborhood field from tagger">
-              📍 area
+              <span className="text-lg" aria-hidden="true">📍</span>
+              <span>area</span>
             </Chip>
           </div>
         </FieldGroup>
@@ -525,7 +531,7 @@ function MoreOptions({
 function FieldGroup({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div>
-      <div className="text-[11px] font-pixel uppercase tracking-wider text-muted mb-1.5">
+      <div className="text-sm font-pixel uppercase tracking-wider text-muted mb-2.5">
         {label}
       </div>
       {children}
@@ -554,12 +560,12 @@ function Chip({
       aria-pressed={on}
       title={title}
       className={[
-        'min-h-[44px] px-3 py-2 rounded-full border-2 text-xs font-sans inline-flex items-center gap-1 transition-all',
+        'min-h-[48px] px-4 py-2.5 rounded-full border-2 text-base font-sans inline-flex items-center gap-1.5 transition-all',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary',
         disabled
           ? 'bg-paper text-muted/60 border-lavender-pale cursor-not-allowed opacity-60'
           : on
-            ? 'bg-purple-primary text-white border-purple-deep shadow-[0_2px_0_0_#4a2a8a]'
+            ? 'bg-purple-primary text-white border-purple-deep shadow-press'
             : 'bg-paper text-ink border-lavender-pale hover:border-purple-primary hover:bg-lavender-light',
       ].join(' ')}
     >
@@ -592,9 +598,9 @@ function Segmented<T extends string>({
             aria-checked={on}
             onClick={() => onChange(o.id)}
             className={[
-              'flex-1 min-h-[44px] px-2 rounded-lg text-xs font-sans transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary',
+              'flex-1 min-h-[48px] px-3 rounded-lg text-base font-sans transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary',
               on
-                ? 'bg-purple-primary text-white shadow-[0_2px_0_0_#4a2a8a]'
+                ? 'bg-purple-primary text-white shadow-press'
                 : 'text-ink hover:bg-lavender-light',
             ].join(' ')}
           >
@@ -623,20 +629,20 @@ function VibePreview({
   const top = [...all].sort((a, b) => b.score - a.score).slice(0, 2)
 
   return (
-    <div className="rounded-2xl border-2 border-lavender-pale bg-lavender-light/50 p-4">
-      <div className="font-pixel text-sm text-purple-dark uppercase tracking-wider mb-2">
+    <div className="rounded-2xl border-2 border-lavender-pale bg-lavender-light/50 p-6">
+      <div className="font-pixel text-pixel-lg text-purple-dark uppercase tracking-wider mb-4">
         live preview
       </div>
 
       {total === 0 ? (
-        <div className="text-sm text-muted flex flex-col gap-2">
+        <div className="text-base text-muted flex flex-col gap-3">
           <div>no events match these filters yet.</div>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2.5">
             {onRelaxTimeAndDays && (
               <button
                 type="button"
                 onClick={onRelaxTimeAndDays}
-                className="px-2.5 py-1 rounded-full border border-lavender text-purple-deep hover:bg-lavender-light text-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary"
+                className="px-4 py-2 rounded-full border-2 border-lavender text-purple-deep hover:bg-lavender-light text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary"
               >
                 open time and days
               </button>
@@ -645,7 +651,7 @@ function VibePreview({
               <button
                 type="button"
                 onClick={onResetAdvancedFilters}
-                className="px-2.5 py-1 rounded-full border border-lavender text-purple-deep hover:bg-lavender-light text-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary"
+                className="px-4 py-2 rounded-full border-2 border-lavender text-purple-deep hover:bg-lavender-light text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-primary"
               >
                 reset advanced filters
               </button>
@@ -654,16 +660,16 @@ function VibePreview({
         </div>
       ) : (
         <>
-          <div className="text-sm text-ink mb-3 leading-relaxed">
-            <span className="font-pixel text-purple-deep text-base">{total}</span>{' '}
+          <div className="text-xl text-ink mb-4 leading-relaxed">
+            <span className="font-pixel text-purple-deep text-pixel-3xl align-baseline">{total}</span>{' '}
             event{total === 1 ? '' : 's'} across{' '}
-            <span className="font-pixel text-purple-deep text-base">
+            <span className="font-pixel text-purple-deep text-pixel-3xl align-baseline">
               {activeDays}
             </span>{' '}
             day{activeDays === 1 ? '' : 's'}
           </div>
 
-          <div className="flex flex-col gap-1.5">
+          <div className="flex flex-col gap-2">
             {top.map((e) => (
               <PreviewRow key={e.uid} event={e} />
             ))}
@@ -686,16 +692,16 @@ function activeFilterSummary(values: VibeSliders): string {
 function PreviewRow({ event }: { event: RankedEvent }) {
   const startsAt = new Date(event.starts_at)
   return (
-    <div className="flex items-center gap-2 bg-paper rounded-xl border border-lavender-pale px-2.5 py-1.5">
-      <div className="text-[10px] font-pixel text-muted uppercase tracking-wide w-14 shrink-0">
+    <div className="flex items-center gap-3 bg-paper rounded-xl border border-lavender-pale px-4 py-3">
+      <div className="text-sm font-pixel text-muted uppercase tracking-wide w-16 shrink-0 leading-tight">
         {formatBaliDay(startsAt).split(',')[0]}
         <br />
         {formatBaliTime(startsAt)}
       </div>
-      <div className="font-pixel text-sm text-purple-dark truncate flex-1">
+      <div className="font-pixel text-pixel-lg text-purple-dark truncate flex-1">
         {event.name}
       </div>
-      <div className="font-pixel text-xs text-purple-deep shrink-0">
+      <div className="font-pixel text-pixel-base text-purple-deep shrink-0">
         {Math.round(event.score * 100)}%
       </div>
     </div>

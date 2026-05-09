@@ -6,17 +6,17 @@ import { AvatarSprite, ARCHETYPE_IDS } from '@/lib/avatars'
  */
 export function Hero() {
   return (
-    <section className="relative px-6 pt-10 pb-6 text-center overflow-hidden">
-      <h1 className="font-pixel text-5xl md:text-6xl text-purple-dark mb-2">
+    <section className="relative px-6 pt-14 pb-10 text-center overflow-hidden">
+      <h1 className="font-pixel text-pixel-4xl md:text-pixel-5xl text-purple-dark mb-4 leading-[0.95]">
         plan my bali week
       </h1>
-      <p className="text-muted text-sm md:text-base max-w-xl mx-auto">
+      <p className="text-muted text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed">
         event categories lie. we read what they&apos;re <em>actually</em> like and
         match you on vibe — not labels.
       </p>
 
       {/* Canggu strip */}
-      <div className="relative mt-6 mx-auto max-w-3xl h-32 rounded-3xl border-[3px] border-lavender-pale shadow-[0_4px_0_0_#e9e0ff] overflow-hidden bg-gradient-to-b from-[#fef3e8] via-[#fde68a]/40 to-[#a7f3d0]/50">
+      <div className="relative mt-10 mx-auto max-w-3xl h-36 rounded-3xl border-[3px] border-lavender-pale shadow-card overflow-hidden bg-gradient-to-b from-[#fef3e8] via-[#fde68a]/40 to-[#a7f3d0]/50">
         {/* sun */}
         <div className="absolute top-3 right-6 w-8 h-8 rounded-full bg-[#fbbf24] shadow-[0_0_18px_4px_rgba(251,191,36,0.5)]" />
         {/* venue rectangles (Canggu stops) */}
@@ -62,10 +62,10 @@ function Stop({ label, x, color }: { label: string; x: string; color: string }) 
       style={{ left: x }}
     >
       <div
-        className="w-10 h-6 rounded-md border-2 border-purple-dark/30"
+        className="w-12 h-7 rounded-md border-2 border-purple-dark/30"
         style={{ background: color }}
       />
-      <span className="font-pixel text-[10px] text-purple-dark/70 mt-0.5">{label}</span>
+      <span className="font-pixel text-pixel-sm text-purple-dark/80 mt-1">{label}</span>
     </div>
   )
 }
