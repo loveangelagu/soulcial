@@ -1,65 +1,68 @@
+/**
+ * Public types + defaults for the "Tune your week" surface.
+ *
+ * The visible UI now lives in `VibeTuner.tsx`; this file is the stable
+ * type/default contract used by `pages/index.tsx`, `lib/ranking.ts`, and the
+ * localStorage migrator. Re-exports `VibeTuner` as `VibeSlidersUI` so any
+ * older callers keep working without touching their imports.
+ */
+
+export type TimeOfDay = 'morning' | 'afternoon' | 'evening' | 'night'
+// 0 = Sunday, 6 = Saturday — matches Date.getDay()
+export type DayOfWeek = 0 | 1 | 2 | 3 | 4 | 5 | 6
+export type EnergyFloor = 'any' | 'medium+' | 'high'
+export type GroupSize = 'any' | 'solo-ok' | 'small' | 'crowd'
+
 export type VibeSliders = {
-  tempo: number    // 0..1, low = slow/restful, high = fast/active
-  social: number   // 0..1, low = solo, high = crowd
-  stretch: number  // 0..1, low = comfort, high = adventurous
+  tempo: number
+  social: number
+  stretch: number
+  // Stored as sorted arrays (not Sets) so they JSON-serialize cleanly into
+  // localStorage. Treated as sets at the call site.
+  timeOfDay: TimeOfDay[]
+  daysAvailable: DayOfWeek[]
+  energyFloor: EnergyFloor
+  groupSize: GroupSize
 }
 
-export const DEFAULT_SLIDERS: VibeSliders = { tempo: 0.5, social: 0.5, stretch: 0.5 }
+export const ALL_TIMES_OF_DAY: TimeOfDay[] = ['morning', 'afternoon', 'evening', 'night']
+export const ALL_DAYS: DayOfWeek[] = [0, 1, 2, 3, 4, 5, 6]
 
-export function VibeSlidersUI({
-  values,
-  onChange,
-}: {
-  values: VibeSliders
-  onChange: (next: VibeSliders) => void
-}) {
-  const set = (key: keyof VibeSliders) => (e: React.ChangeEvent<HTMLInputElement>) =>
-    onChange({ ...values, [key]: Number(e.target.value) })
-
-  return (
-    <div className="flex flex-col gap-5 w-full max-w-md">
-      <Slider
-        leftIcon="🧘" leftLabel="slow"
-        rightIcon="🔥" rightLabel="fast"
-        value={values.tempo} onChange={set('tempo')}
-      />
-      <Slider
-        leftIcon="🌱" leftLabel="solo"
-        rightIcon="🎉" rightLabel="social"
-        value={values.social} onChange={set('social')}
-      />
-      <Slider
-        leftIcon="🛋️" leftLabel="comfort"
-        rightIcon="🚀" rightLabel="stretch"
-        value={values.stretch} onChange={set('stretch')}
-      />
-    </div>
-  )
+export const DEFAULT_SLIDERS: VibeSliders = {
+  tempo: 0.5,
+  social: 0.5,
+  stretch: 0.5,
+  timeOfDay: [...ALL_TIMES_OF_DAY],
+  daysAvailable: [...ALL_DAYS],
+  energyFloor: 'any',
+  groupSize: 'any',
 }
 
-function Slider({
-  leftIcon, leftLabel, rightIcon, rightLabel, value, onChange,
-}: {
-  leftIcon: string; leftLabel: string
-  rightIcon: string; rightLabel: string
-  value: number
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-}) {
-  return (
-    <div>
-      <div className="flex items-center justify-between text-xs text-muted mb-1.5">
-        <span>{leftIcon} {leftLabel}</span>
-        <span>{rightLabel} {rightIcon}</span>
-      </div>
-      <input
-        type="range"
-        min={0}
-        max={1}
-        step={0.01}
-        value={value}
-        onChange={onChange}
-        className="w-full h-2 rounded-full appearance-none bg-lavender-pale accent-purple-deep cursor-pointer"
-      />
-    </div>
-  )
+/**
+ * Fill in any missing fields on a partial `VibeSliders` (e.g. one rehydrated
+ * from an older localStorage shape). Always returns a complete object.
+ */
+export function migrateSliders(raw: unknown): VibeSliders {
+  const r = (raw && typeof raw === 'object' ? raw : {}) as Partial<VibeSliders>
+  return {
+    tempo: typeof r.tempo === 'number' ? r.tempo : DEFAULT_SLIDERS.tempo,
+    social: typeof r.social === 'number' ? r.social : DEFAULT_SLIDERS.social,
+    stretch: typeof r.stretch === 'number' ? r.stretch : DEFAULT_SLIDERS.stretch,
+    timeOfDay: Array.isArray(r.timeOfDay) && r.timeOfDay.length > 0
+      ? (r.timeOfDay.filter((t) => ALL_TIMES_OF_DAY.includes(t as TimeOfDay)) as TimeOfDay[])
+      : [...ALL_TIMES_OF_DAY],
+    daysAvailable: Array.isArray(r.daysAvailable) && r.daysAvailable.length > 0
+      ? (r.daysAvailable.filter((d): d is DayOfWeek =>
+          typeof d === 'number' && d >= 0 && d <= 6) as DayOfWeek[])
+      : [...ALL_DAYS],
+    energyFloor: r.energyFloor === 'medium+' || r.energyFloor === 'high'
+      ? r.energyFloor
+      : 'any',
+    groupSize: r.groupSize === 'solo-ok' || r.groupSize === 'small' || r.groupSize === 'crowd'
+      ? r.groupSize
+      : 'any',
+  }
 }
+
+// Re-export the new tuner under the old name so older imports keep working.
+export { VibeTuner as VibeSlidersUI } from './VibeTuner'
