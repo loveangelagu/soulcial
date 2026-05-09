@@ -400,7 +400,7 @@ function MyWeekTray({
       list.push(event)
       map.set(key, list)
     }
-    return [...map.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+    return Array.from(map.entries()).sort((a, b) => a[0].localeCompare(b[0]))
   }, [visiblePinned])
 
   if (pinnedCount === 0) return null
