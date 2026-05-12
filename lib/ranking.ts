@@ -1,37 +1,23 @@
 import {
-  PERSONALITY_DIMS,
   cosineSimilarity,
   type PersonalityVec,
 } from '@/lib/personality/vector'
 import type { EventWithVector } from '@/lib/supabase'
-import type {
-  VibeSliders,
-  TimeOfDay,
-  DayOfWeek,
-  EnergyFloor,
-  GroupSize,
-} from '@/components/VibeSliders'
+import {
+  type Pace,
+  paceToEventsPerDay,
+  paceToTempoBias,
+} from '@/lib/sliders-types'
 
 /**
- * Apply slider biases to a base personality vector.
- *
- * - tempo:   blends `tempo` dim toward the slider value
- * - social:  blends `communion` + `expression` up, `stillness` down (or vice versa)
- * - stretch: blends `edge_seeking` + `openness` toward slider value
+ * Apply pace to the user's `tempo` dim. That's the entire bias.
+ * No social/stretch sliders, no hard filters — pre-filtering kills ranking quality.
  */
-export function biasVector(base: PersonalityVec, sliders: VibeSliders): PersonalityVec {
-  const out: PersonalityVec = { ...base }
-
-  out.tempo = lerp(base.tempo, sliders.tempo, 0.7)
-
-  out.communion  = lerp(base.communion,  sliders.social, 0.45)
-  out.expression = lerp(base.expression, sliders.social, 0.30)
-  out.stillness  = lerp(base.stillness,  1 - sliders.social, 0.45)
-
-  out.edge_seeking = lerp(base.edge_seeking, sliders.stretch, 0.55)
-  out.openness     = lerp(base.openness,     sliders.stretch, 0.30)
-
-  return out
+export function biasVector(base: PersonalityVec, pace: Pace): PersonalityVec {
+  return {
+    ...base,
+    tempo: lerp(base.tempo, paceToTempoBias(pace), 0.7),
+  }
 }
 
 function lerp(a: number, b: number, t: number) {
@@ -43,39 +29,38 @@ export type RankedEvent = EventWithVector & {
   why: string
 }
 
-export const DAYS_PER_WEEK = 7
 export const PLAN_DAYS = 7
 
 /**
- * Rank events by cosine similarity to the user's biased vector, then
- * group by day-of-week and pick top N per day based on tempo (slow=1/day,
- * fast=3/day).
+ * Rank every event by cosine similarity to the (pace-biased) user vector,
+ * bucket by Bali day, and pick the top N per day where N = pace's events-per-day.
  *
- * Applies hard filters first:
- *   - `timeOfDay`     — only events whose Bali-time start falls in selected bucket(s)
- *   - `daysAvailable` — only days whose Bali-weekday is selected (other grid cells are kept empty)
- *   - `energyFloor`   — `e.energy` must meet the floor
- *   - `groupSize`     — `e.social_intensity` must match the selected size category
+ * Returns a 7-day grid starting today (Bali time).
  *
- * Returns events for the next 7 days.
+ * `interests` (optional) is the raw user-picked interest labels. When passed,
+ * we boost events whose tagger-emitted `interests_served`/`interests_adjacent`
+ * strings overlap with any user interest's keywords. This fixes cases where
+ * Haiku's vector reading is technically defensible but topically wrong — e.g.
+ * a "dating strategy workshop" tagged with high agency/systems/openness
+ * shouldn't outrank a literal AI coworking session for an AI/ML picker.
  */
 export function rankAndGroupByDay(
   events: EventWithVector[],
   user: PersonalityVec,
-  sliders: VibeSliders,
+  pace: Pace,
+  interests: string[] = [],
 ): { date: Date; events: RankedEvent[] }[] {
-  const biased = biasVector(user, sliders)
+  const biased = biasVector(user, pace)
+  const userKeywords = interestKeywords(interests)
 
-  const timeSet = new Set(sliders.timeOfDay)
-  const daySet = new Set(sliders.daysAvailable)
-
-  // 1) filter + score every event
-  const scored: RankedEvent[] = events
-    .filter((e) => passesHardFilters(e, sliders, timeSet))
-    .map((e) => {
-      const score = cosineSimilarity(biased, e.vector as any)
-      return { ...e, score, why: e.best_for ?? '' }
-    })
+  // 1) score every event
+  const scored: RankedEvent[] = events.map((e) => {
+    const cosine = cosineSimilarity(biased, e.vector as any)
+    const boost = interestOverlapBoost(e, userKeywords)
+    // Clamp so the visible match % never exceeds 99 (looks weirder than honest).
+    const score = Math.min(0.99, cosine * (1 + boost))
+    return { ...e, score, why: e.best_for ?? '' }
+  })
 
   // 2) bucket by Bali-day (UTC+8)
   const buckets = new Map<string, RankedEvent[]>()
@@ -86,19 +71,12 @@ export function rankAndGroupByDay(
     buckets.set(key, arr)
   }
 
-  // 3) decide events-per-day from tempo slider: 1 (slow) → 3 (fast)
-  const perDay = Math.max(1, Math.round(1 + sliders.tempo * 2))
-
-  // 4) build a 7-day grid starting today (Bali time)
+  // 3) build the 7-day grid
+  const perDay = paceToEventsPerDay(pace)
   const result: { date: Date; events: RankedEvent[] }[] = []
   const today = baliMidnight(new Date())
   for (let i = 0; i < PLAN_DAYS; i++) {
     const d = new Date(today.getTime() + i * 24 * 60 * 60 * 1000)
-    const weekday = baliWeekday(d)
-    if (!daySet.has(weekday)) {
-      result.push({ date: d, events: [] })
-      continue
-    }
     const key = baliDayKey(d)
     const dayEvents = (buckets.get(key) ?? [])
       .sort((a, b) => b.score - a.score)
@@ -108,44 +86,70 @@ export function rankAndGroupByDay(
   return result
 }
 
-// ─── Hard filters ─────────────────────────────────────────────────────────────
+// ─── Interest-overlap boost ──────────────────────────────────────────────────
 
-function passesHardFilters(
-  e: EventWithVector,
-  sliders: VibeSliders,
-  timeSet: Set<TimeOfDay>,
-): boolean {
-  if (timeSet.size > 0 && timeSet.size < 4) {
-    const bucket = baliTimeOfDay(new Date(e.starts_at))
-    if (!timeSet.has(bucket)) return false
+/**
+ * Map each user-picked interest label to a set of keyword fragments we look
+ * for in the event's tagger-emitted `interests_served` / `interests_adjacent`.
+ * Kept small + lowercase; partial substring matches count.
+ */
+const INTEREST_KEYWORDS: Record<string, string[]> = {
+  'Yoga':           ['yoga', 'flow', 'asana', 'vinyasa'],
+  'Meditation':     ['meditation', 'mindful', 'zen'],
+  'Breathwork':     ['breath', 'pranayama'],
+  'Sound Healing':  ['sound', 'gong', 'bowl', 'frequenc'],
+  'Cold Plunge':    ['cold', 'plunge', 'ice', 'sauna'],
+  'Spirituality':   ['spiritual', 'mystic', 'sacred', 'soul'],
+  'Plant Medicine': ['plant medicine', 'cacao', 'mushroom', 'ayahuasca', 'ceremony'],
+  "Women's Circles":['circle', 'feminine', 'women'],
+  'Surfing':        ['surf', 'wave', 'ocean'],
+  'Ecstatic Dance': ['dance', 'ecstatic', 'movement'],
+  'Pilates':        ['pilates'],
+  'Hiking':         ['hike', 'hiking', 'trek', 'walk', 'outdoor'],
+  'Fitness':        ['fitness', 'workout', 'training', 'gym', 'run'],
+  'AI / ML':        ['ai', 'machine learning', 'ml', 'llm'],
+  'Vibe Coding':    ['code', 'coding', 'programming', 'developer'],
+  'Startups':       ['startup', 'founder', 'entrepreneur', 'building'],
+  'SaaS':           ['saas', 'product', 'software'],
+  'Crypto':         ['crypto', 'bitcoin', 'blockchain', 'web3', 'defi'],
+  'Art':            ['art', 'paint', 'creative', 'craft'],
+  'Music':          ['music', 'jam', 'concert', 'sing'],
+  'Photography':    ['photo', 'photography'],
+  'Writing':        ['writing', 'writer', 'journal'],
+  'Design':         ['design', 'creative'],
+  'Coffee':         ['coffee', 'cafe'],
+  'Cocktails':      ['cocktail', 'bar', 'drink'],
+  'Live Music':     ['live music', 'concert', 'band', 'gig'],
+  'Nightlife':      ['nightlife', 'party', 'club', 'dj'],
+  'Cooking':        ['cook', 'food', 'dinner'],
+  'Travel':         ['travel', 'adventure', 'explore'],
+  'Networking':     ['network', 'connect', 'meet'],
+  'Community':      ['community', 'gathering', 'tribe'],
+}
+
+function interestKeywords(interests: string[]): Set<string> {
+  const set = new Set<string>()
+  for (const i of interests) {
+    for (const kw of INTEREST_KEYWORDS[i] ?? []) set.add(kw)
   }
-  if (!passesEnergyFloor(e.energy, sliders.energyFloor)) return false
-  if (!passesGroupSize(e.social_intensity, sliders.groupSize)) return false
-  return true
+  return set
 }
 
-function passesEnergyFloor(
-  energy: EventWithVector['energy'] | undefined,
-  floor: EnergyFloor,
-): boolean {
-  if (floor === 'any') return true
-  // Missing data shouldn't silently disappear — keep these in.
-  if (!energy) return true
-  if (floor === 'medium+') return energy === 'medium' || energy === 'high'
-  if (floor === 'high')    return energy === 'high'
-  return true
-}
-
-function passesGroupSize(
-  intensity: EventWithVector['social_intensity'] | undefined,
-  size: GroupSize,
-): boolean {
-  if (size === 'any') return true
-  if (!intensity) return true
-  if (size === 'solo-ok') return intensity === 'solo' || intensity === 'small-group'
-  if (size === 'small')   return intensity === 'small-group'
-  if (size === 'crowd')   return intensity === 'crowd'
-  return true
+function interestOverlapBoost(e: EventWithVector, userKeywords: Set<string>): number {
+  if (userKeywords.size === 0) return 0
+  const haystack = [
+    ...(e.interests_served ?? []),
+    ...(e.interests_adjacent ?? []),
+  ]
+    .join(' ')
+    .toLowerCase()
+  if (!haystack) return 0
+  let matches = 0
+  for (const kw of userKeywords) {
+    if (haystack.includes(kw)) matches++
+  }
+  // up to 25% boost when many keywords overlap; tapers off quickly.
+  return Math.min(0.25, matches * 0.08)
 }
 
 // ─── Bali timezone helpers (UTC+8) ───────────────────────────────────────────
@@ -153,7 +157,7 @@ function passesGroupSize(
 const BALI_OFFSET_MS = 8 * 60 * 60 * 1000
 
 /** Returns YYYY-MM-DD in Bali time. */
-function baliDayKey(d: Date): string {
+export function baliDayKey(d: Date): string {
   const shifted = new Date(d.getTime() + BALI_OFFSET_MS)
   return shifted.toISOString().slice(0, 10)
 }
@@ -163,22 +167,6 @@ function baliMidnight(d: Date): Date {
   const shifted = new Date(d.getTime() + BALI_OFFSET_MS)
   shifted.setUTCHours(0, 0, 0, 0)
   return new Date(shifted.getTime() - BALI_OFFSET_MS)
-}
-
-/** Day-of-week (0=Sun..6=Sat) in Bali time. */
-function baliWeekday(d: Date): DayOfWeek {
-  const shifted = new Date(d.getTime() + BALI_OFFSET_MS)
-  return shifted.getUTCDay() as DayOfWeek
-}
-
-/** Bali-time time-of-day bucket. */
-export function baliTimeOfDay(d: Date): TimeOfDay {
-  const shifted = new Date(d.getTime() + BALI_OFFSET_MS)
-  const h = shifted.getUTCHours()
-  if (h < 12) return 'morning'
-  if (h < 17) return 'afternoon'
-  if (h < 21) return 'evening'
-  return 'night'
 }
 
 export function formatBaliDay(d: Date): string {

@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { PERSONALITY_DIMS, type PersonalityDim, type PersonalityVec } from '@/lib/personality/vector'
 
 const DIM_LABELS: Record<string, string> = {
@@ -16,17 +16,41 @@ const DIM_LABELS: Record<string, string> = {
   status_orientation: 'status',
 }
 
+/**
+ * Read viewport width once + on resize so we can pick a comfortable SVG size.
+ * Mobile (≤640px) → 240. Desktop → 320.
+ */
+function useResponsiveSize(): number {
+  const [size, setSize] = useState(280)
+  useEffect(() => {
+    const compute = () => {
+      if (typeof window === 'undefined') return 280
+      return window.innerWidth <= 640 ? 240 : 320
+    }
+    setSize(compute())
+    const onResize = () => setSize(compute())
+    window.addEventListener('resize', onResize)
+    return () => window.removeEventListener('resize', onResize)
+  }, [])
+  return size
+}
+
 export function PersonalityRadar({
   vector,
   onChange,
-  size = 280,
+  size: sizeProp,
 }: {
   vector: PersonalityVec
   onChange?: (next: PersonalityVec) => void
   size?: number
 }) {
+  const autoSize = useResponsiveSize()
+  const size = sizeProp ?? autoSize
+  const labelFontSize = size <= 240 ? 10 : 11
+  const labelPad = size <= 240 ? 14 : 16
+
   const center = size / 2
-  const maxR = size / 2 - 32  // padding for labels
+  const maxR = size / 2 - (labelPad + 16)  // room for labels + padding
   const n = PERSONALITY_DIMS.length
   const angle = (i: number) => -Math.PI / 2 + (i / n) * Math.PI * 2
 
@@ -34,7 +58,6 @@ export function PersonalityRadar({
   const [dragIdx, setDragIdx] = useState<number | null>(null)
 
   const points = useMemo(() => {
-    // Build polygon points for the user's vector.
     return PERSONALITY_DIMS.map((dim, i) => {
       const v = vector[dim] ?? 0
       const r = v * maxR
@@ -65,14 +88,13 @@ export function PersonalityRadar({
     onChange({ ...vector, [dim]: v })
   }
 
-  // Build axis lines + labels.
   return (
     <svg
       ref={svgRef}
       width={size}
       height={size}
       viewBox={`0 0 ${size} ${size}`}
-      className="overflow-visible"
+      className="overflow-visible flex-shrink-0"
       style={onChange ? { touchAction: 'none' } : undefined}
       onPointerMove={(e) => {
         if (dragIdx == null) return
@@ -82,7 +104,6 @@ export function PersonalityRadar({
       onPointerCancel={() => setDragIdx(null)}
       onPointerLeave={() => setDragIdx(null)}
     >
-      {/* Concentric guide circles */}
       {[0.25, 0.5, 0.75, 1.0].map((t) => (
         <circle
           key={t}
@@ -94,7 +115,6 @@ export function PersonalityRadar({
           strokeWidth={1}
         />
       ))}
-      {/* Axis spokes */}
       {PERSONALITY_DIMS.map((_, i) => {
         const a = angle(i)
         return (
@@ -109,7 +129,6 @@ export function PersonalityRadar({
           />
         )
       })}
-      {/* User polygon */}
       <polygon
         points={polyStr}
         fill="rgba(167, 139, 250, 0.35)"
@@ -117,10 +136,8 @@ export function PersonalityRadar({
         strokeWidth={2}
         strokeLinejoin="round"
       />
-      {/* User vertices */}
       {points.map(([x, y], i) => (
         <g key={i}>
-          {/* Bigger invisible hit target for touch/mouse */}
           <circle
             cx={x}
             cy={y}
@@ -138,17 +155,16 @@ export function PersonalityRadar({
           <circle cx={x} cy={y} r={3.5} fill="#7c3aed" pointerEvents="none" />
         </g>
       ))}
-      {/* Labels */}
       {PERSONALITY_DIMS.map((dim, i) => {
         const a = angle(i)
-        const lx = center + (maxR + 16) * Math.cos(a)
-        const ly = center + (maxR + 16) * Math.sin(a)
+        const lx = center + (maxR + labelPad) * Math.cos(a)
+        const ly = center + (maxR + labelPad) * Math.sin(a)
         return (
           <text
             key={dim}
             x={lx}
             y={ly}
-            fontSize={11}
+            fontSize={labelFontSize}
             fill="#6a6a80"
             textAnchor="middle"
             dominantBaseline="middle"

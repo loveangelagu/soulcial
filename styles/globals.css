@@ -32,17 +32,27 @@ body {
 
 /* Leaflet */
 .event-map {
-  height: 780px;
+  height: 560px;
   width: 100%;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
 }
 
 @media (max-width: 640px) {
   .event-map {
-    height: 480px;
+    height: 320px;
     max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .leaflet-tooltip.event-map__label,
+  .event-map__label {
+    font-size: 12px;
   }
 }
 

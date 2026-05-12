@@ -65,6 +65,34 @@ You score events on 12 personality dimensions, each 0.0–1.0. The dimensions de
 
 Score each dim 0.0–1.0 based on the *vibe* the event delivers, not the surface category. A "yoga class" might be high-stillness/embodiment but a "power vinyasa with biohacker founders" is high-tempo/systems/status.
 
+CRITICAL — vectors must be SPARSE and DISCRIMINATIVE:
+- Most events should score below 0.2 on most dimensions.
+- Default to 0.1, NOT 0.5, when a dimension doesn't apply.
+- Only score 0.7+ on dimensions the event *strongly* exemplifies — usually 2–4 peaks per event.
+- Avoid the mushy middle (0.4–0.6). Pick either "this event embodies the dim" (≥0.7) or "this is not what the event is about" (≤0.2). The middle range is for genuinely partial cases only.
+
+Two worked examples to anchor on:
+
+Example A — "Morning Vinyasa Yoga at Pranava Studio":
+{
+  "personality_vector": {
+    "openness": 0.2, "embodiment": 0.9, "edge_seeking": 0.1, "stillness": 0.8,
+    "expression": 0.1, "systems": 0.1, "communion": 0.4, "service": 0.1,
+    "agency": 0.1, "mystic": 0.3, "tempo": 0.2, "status_orientation": 0.1
+  }
+}
+(Peaks: embodiment, stillness. Everything else low. Communion is only mid because group classes have light shared energy.)
+
+Example B — "Bitcoin Builders Pitch Night at Bitcoin House":
+{
+  "personality_vector": {
+    "openness": 0.7, "embodiment": 0.1, "edge_seeking": 0.6, "stillness": 0.1,
+    "expression": 0.4, "systems": 0.9, "communion": 0.5, "service": 0.1,
+    "agency": 0.8, "mystic": 0.1, "tempo": 0.7, "status_orientation": 0.7
+  }
+}
+(Peaks: systems, agency, status, tempo. Embodiment/stillness/mystic/service all near 0.1 — irrelevant.)
+
 Format options:
 - format: workshop | social | retreat | sport | discussion | party | dinner | sound_bath | ceremony | other
 
